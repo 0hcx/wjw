@@ -1,0 +1,81 @@
+@charset "UTF-8";
+html, body, div, p, ol, ul, li, dl, dt, dd, form, table, tr, td, h1, h2, h3, h4, h5, h6, hr, img, input {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 26.67vw; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none;
+  display: block; }
+
+body {
+  background-image: url(../img/img-YD/stock-photo-75412165.jpg); }
+
+/*头部*/
+header {
+  width: 100%;
+  height: 1.14rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f1f1f1; }
+  header img {
+    width: 1.54rem;
+    height: 0.69rem; }
+  header p {
+    font-size: 0.14rem;
+    color: #666;
+    margin-top: 0.08rem; }
+
+.posi_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f1f1; }
+  .posi_box input {
+    margin-top: 0.2rem;
+    width: 3.27rem;
+    height: 0.32rem; }
+  .posi_box .regi_agree {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.12rem;
+    margin-right: -2.2rem; }
+    .posi_box .regi_agree #xieyi {
+      width: 0.2rem;
+      height: 0.2rem; }
+    .posi_box .regi_agree a {
+      height: 0.2rem;
+      margin-top: 0.2rem;
+      margin-left: 0.1rem;
+      font-size: 0.14rem; }
+  .posi_box .regi_btn {
+    font-size: 0.2rem;
+    color: white;
+    background: blue;
+    margin-top: 0.4rem;
+    width: 3.27rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    border-radius: 0.04rem; }
+  .posi_box .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.4rem; }
+    .posi_box .footer a {
+      display: block;
+      font-size: 0.14rem;
+      margin-right: 0.3rem; }
