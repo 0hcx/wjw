@@ -1,7 +1,7 @@
-function $(id){
-	return document.getElementById(id);
-}
-window.onload=function(){
+//function $(id){
+//	return document.getElementById(id);
+//}
+//window.onload=function(){
 	// 菜单滑过开始
 //	var navAll = $("shoppingMall");
 //	var level01 = $("menu_leftId");//一级菜单
@@ -41,14 +41,14 @@ window.onload=function(){
 //	
 	// level01.style.display = "none";
 	// 菜单滑过结束
-}
+//}
 
 //菜单滑过开始
 //var arr=["../img/sorticon_xuan_01.png","../img/sorticon_putao_01.png","../img/sorticon_yang_01.png","../img/sorticon_beer_01.png","../img/sorticon_round_01.png","../img/sorticon_enm_01.png","../img/sorticon_rupin_01.png"];
 //var index = null;
 
 $("#shoppingMall").mouseenter(function(){
-	$(".menu_left").css("display","block");
+	$(".menu_left").css({"display":"block"});
 });
 //$(".list").mouseenter(function(){
 // 	var index=$(this).index();

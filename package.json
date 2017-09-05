@@ -1,0 +1,32 @@
+{
+  "name": "wangjiuwang",
+  "version": "1.0.0",
+  "description": "这是第一个项目",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0hcx/wangjiuwang.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "cx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0hcx/wangjiuwang/issues"
+  },
+  "homepage": "https://github.com/0hcx/wangjiuwang#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-less": "^3.3.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
