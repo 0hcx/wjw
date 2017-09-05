@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全部商品-列表</title>
+    <link rel="icon" href="http://img0.wangjiu.com/wj.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/list.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+<body>
+  	<!-- header-tips 开始-->
+  	<div id="header-tips">
+        <ul class="mn">
+            <li class="menu">
+                <em>更多频道</em><i></i>
+                <ul>
+                  <li><a target="_blank" href="#">集团内购</a></li>
+                  <li><a target="_blank" href="#">名庄知识</a></li>
+                  <li><a target="_blank" href="#">酒迷社区</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <em>乐视生态</em><i></i>
+                <ul>
+                    <li><a target="_blank" href="#">乐视网</a></li>
+                    <li><a target="_blank" href="#">乐视商城</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank">提货卡</a></li>
+            <li class="menu">
+              <em><a href="#">会员俱乐部</a></em><i></i>
+                <ul>
+                    <li><a href="#" target="_blank">酒迷社区</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu">
+                <em><a href="javascript:void(0)" onclick="goUserCenter()">我的网酒</a></em><i></i>
+                <ul>
+                  <li><a href="javascript:void(0)" onclick="goOrderlist()">我的订单</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCoupon()">我的优惠券</a></li>
+                  <li><a href="javascript:void(0)" onclick="goPoint()">我的积分</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCollection()">我的收藏</a></li>                  
+                </ul>
+            </li>
+            <li id="loginMess" class="app" style="margin-right:15px;"><span>hi~欢迎来到网酒网</span><a href="javascript:;" id="qregister">快速注册</a>  <a id="login" href="javascript:;">登录</a></li> 
+            <li class="app">
+                <a target="_blank" href="#">手机网酒网</a>
+            </li>
+        </ul>
+    </div>
+    <!-- header-tips 结束-->
+    <!-- header-mn-z 开始 -->
+    <div id="header-mn-z">
+      <div id="header-mn">
+        <a href="index.html"><div class="logo"></div></a>
+        <div id="hd-car" class="topCart" style="">
+          <a href="cart.html" target="_blank">
+          <div class="car-hd">
+            <div class="car-tw" style="">我的购物车</div>
+            <div class="car-numb J_cartSumCount">0</div>
+            <i></i>
+          </div>
+        </a>
+        <!-- <div id="J_cartMN" class="car-mn">
+          <div class="tlt"><i id="J_topCartTitle" style="display:none;">最新加入的商品</i></div>
+          <ul class="mn">           
+              <div id="J_topCartContent"></div>            
+          </ul>
+          <div id="J_topGoCart" class="set" style="display:none;">
+            <div class="txt">已选<span class="J_topCartCheckNum">0</span>件商品，共计<span class="J_rightCartPrice">￥0.00</span>
+            </div>
+            <a class="btn" id="topCart_tuiguang" href="http://www.wangjiu.com/cart.html" target="_blank">去购物车结算</a>
+          </div>
+        </div> -->
+      </div>  
+
+
+      <div id="hd-search">
+        <div class="mn searchClass">
+          <input id="searchContent" type="text" value="赏轩辕剑，品火玫瑰，6支低至299元 >>" class="search-text" style="color:#999;">
+          <a id="searchId" href="javascript:;" class="search-btn"></a>
+          <div class="search-tips">
+            <a href="#">葡萄酒</a>
+            <a href="#">/白酒</a>
+            <a href="#">/起泡酒</a>
+            <a href="#">/轩尼诗</a>
+            <a href="#">/买酒送手机</a>
+            <a href="#">/名庄</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header-mn-z 结束 -->
+  
+    <div id="header-menu-z">
+        <ul id="header-menu">
+            <li class="menuid-z" id="menuid">
+                <a id="shoppingMall" href="list.html" target="_blank">全部商品</a>
+                <div id="menuNav" class="menuNav" style=""></div>
+                <div class="menu_left" id="menu_leftId">                  
+                    <div class="list" data-index="0">
+                        <h2 class="iterm01"><a href="#" target="_blank">一键选购</a></h2>
+                    </div>
+                    <div class="list" data-index="1">
+                        <h2 class="iterm02"><a href="#" target="_blank">葡萄酒</a></h2>
+                    </div>
+                    <div class="list" data-index="2">
+                        <h2 class="iterm03"><a href="#" target="_blank">白酒</a></h2>
+                    </div>
+                    <div class="list" data-index="3">
+                        <h2 class="iterm04"><a href="#" target="_blank">烈酒</a></h2>
+                    </div>
+                    <div class="list" data-index="4">
+                        <h2 class="iterm05"><a href="#" target="_blank">啤酒</a></h2>
+                    </div>
+                    <div class="list" data-index="5">
+                        <h2 class="iterm06"><a href="#" target="_blank">酒具周边</a></h2>
+                    </div> 
+                    <div class="list" data-index="6">
+                        <h2 class="iterm07"><a href="#" target="_blank">生态世界</a></h2>
+                    </div>   
+                </div>
+                <div id="ErJiCaiDan" style="display: none;">
+                    <!-- <div gsregion="3" gssnapshot="0" class="menu_cn"> -->
+                    <div gsregion="3" gssnapshot="0" class="menu_cn" >
+
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/28401068676029874.png" width="280px" height="350px"/>
+                                </a>
+                            </div>
+                        </div>
+                                  
+                        <div class="cn_list">
+                          <b>一键选购</b>
+                            <a href="#">法国</a>
+                            <a href="#">智利</a>
+                            <a href="#">波尔多</a>
+                            <a href="#">托斯卡纳</a><br>
+                            <a href="#">1855列级庄</a>
+                            <a href="#">中级庄</a>
+                            <a href="#" style="color:red">整箱购</a><br>
+                            <a href="#" style="color:red">奔富</a>
+                            <a href="#">干露</a>
+                            <a href="#" style="color:red">拉菲</a>
+                            <a href="#" >卡门萨</a>
+                            <a href="#">红魔鬼</a>
+                            <a href="#">泽巴赫</a><br>
+                            <a href="#">甜白</a>
+                            <a href="#">起泡/香槟</a><br>
+                            <a href="#">芝华士</a>
+                            <a href="#">轩尼诗</a>
+                            <a href="#">威士忌</a>
+                            <a href="#">白兰地</a><br>
+                            <a href="#">格鲁特</a>
+                            <a href="#">德国啤酒</a>
+                            <a href="#">比利时啤酒</a><br>
+                            <a href="#">酒杯</a>
+                            <a href="#">酒柜</a>
+                            <a href="#" style="color:red">白酒</a>
+                            <a href="#" style="color:red">茅台</a>
+                            <a href="#" style="color:red">五粮液</a>
+                            <a href="#" style="color:red">洋河</a>
+                            <a href="#" style="color:red">剑南春</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>价格区间</b>
+                            <a href="#">200元以下</a>
+                            <a href="#">200~299</a>
+                            <a href="#">300~499</a>
+                            <a href="#">500~799</a><br/>
+                            <a href="#">800~999</a>
+                            <a href="#">1000~1999</a>
+                            <a href="#">2000以上</a>
+                        </div>
+                      
+                    </div>
+
+
+                    <div gsregion="3" gssnapshot="1" class="menu_cn">
+                        <div class="l">
+                            <div class="cn_list">
+                              <b>葡萄酒类型</b>
+                                <a href="#">红葡萄酒</a>
+                                <a href="#">白葡萄酒</a>
+                                <a href="#">桃红葡萄酒</a>
+                                <a href="#">起泡葡萄酒</a>
+                                <a href="#">加强葡萄酒</a>
+                                <a href="#">甜型葡萄酒</a>
+                            </div>
+                            <div class="cn_list">
+                                <b>品牌</b>
+                                <a href="#">奔富酒园</a>
+                                <a href="#">卡沃利</a>
+                                <a href="#">坎托雷</a>
+                                <a href="#">V骑士</a>
+                                <a href="#">泽巴赫酒庄</a>
+                                <a href="#">火玫瑰</a>
+                                <a href="#">石柱</a>
+                                <a href="#">鬼脸</a>
+                                <a href="#">卡乐丝</a>
+                            </div>
+                            <div class="cn_list">
+                                <b>等级</b>
+                                <a href="#">1855梅多克列级庄园</a>
+                                <a href="#">圣爱美侬列级庄园</a>
+                                <a href="#">苏玳巴萨克列级庄园</a>
+                                <a href="#">格拉夫列级庄园</a>
+                                <a href="#"> 勃艮第AOC</a>
+                                <a href="#">波美侯AOC</a>    
+                            </div>
+                                <div class="cn_list">
+                                <b>国家</b>
+                                    <a href="#">法国</a>
+                                    <a href="#">澳大利亚</a>
+                                    <a href="#">意大利</a>
+                                    <a href="#">德国</a>
+                                    <a href="#">西班牙</a>
+                                    <a href="#">美国</a>
+                                    <a href="#">智利</a>
+                                    <a href="#">阿根廷</a>
+                                    <a href="#">加拿大</a>
+                                    <a href="#">南非</a>
+                                    <a href="#">奥地利</a>
+                                    <a href="#">葡萄牙</a>
+                                    <a href="#">新西兰</a>
+                                    <a href="#">匈牙利</a>
+                                    <a href="#">中国</a>
+                                </div>
+                            </div>
+                        <div class="l">
+                            <div class="cn_list">
+                                <b>产区</b>
+                                <a href="#">波尔多</a>
+                                <a href="#">勃艮第</a>
+                                <a href="#">香槟</a>
+                                <a href="#">罗讷河谷</a>
+                                <a href="#">皮埃蒙特</a>
+                                <a href="#">托斯卡纳</a>
+                                <a href="#">威尼托</a>
+                                <a href="#">莫舍尔</a>
+                                <a href="#">莱茵黑森</a>
+                                <a href="#">南澳</a>
+                            </div>
+                         
+                            <div class="cn_list">
+                                <b>葡萄品种</b>
+                                <a href="#">赤霞珠</a>
+                                <a href="#">美乐</a>
+                                <a href="#">西拉</a>
+                                <a href="#">佳美娜</a>
+                                <a href="#"> 桑娇维塞</a>
+                                <a href="#">霞多丽</a>
+                                <a href="#">仙粉黛</a>
+                                <a href="#">长相思</a>
+                                <a href="#">雷司令</a>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div gsregion="3" gssnapshot="2" class="menu_cn"><!-- 白酒 -->
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/1472034619916397.png" width="280px" height="350px"/>
+                                </a>
+                           </div>            
+                        </div>
+                        <div class="cn_list">
+                            <b>品牌</b>
+                            <a href="#">茅台</a>
+                            <a href="#">五粮液</a>
+                            <a href="#">洋河</a>
+                            <a href="#">剑南春</a>
+                            <a href="#">汾酒</a>
+                            <a href="#">古井贡</a>
+                            <a href="#">红星</a>
+                            <a href="#">泸州老窖</a>
+                            <a href="#">郎酒</a>
+                            <a href="#">牛栏山</a>
+                            <a href="#">水井坊</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>香型</b>
+                            <a href="#">酱香</a>
+                            <a href="#">浓香</a>
+                            <a href="#">清香</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>产地</b>
+                            <a href="#">安徽</a>
+                            <a href="#">北京</a>
+                            <a href="#">贵州</a>
+                            <a href="#">江苏</a>
+                            <a href="#">山西</a>
+                            <a href="#">四川</a>
+                            <a href="#">其他</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>价位</b>
+                            <a href="#">1~99元</a>
+                            <a href="#">100~299元</a>
+                            <a href="#">300~599元</a>
+                            <a href="#">600~999元</a>
+                            <a href="#">1000元以上</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div gsregion="3" gssnapshot="3" class="menu_cn">
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/7401957692933198.png" width="280px" height="350px"/>
+                                </a>
+                           </div>            
+                        </div>
+                        <div class="cn_list">
+                            <b>种类</b>
+                            <a href="#">威士忌</a>
+                            <a href="#">白兰地</a>
+                            <a href="#">伏特加</a>
+                            <a href="#">预调酒</a>
+                            <a href="#">朗姆酒</a>
+                            <a href="#">龙舌兰</a>
+                            <a href="#">力娇酒/利口酒</a>
+                            <a href="#">金酒</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>品牌</b>
+                            <a href="#">芝华士</a>
+                            <a href="#">尊尼获加</a>
+                            <a href="#">杰克丹尼</a>
+                            <a href="#">百龄坛</a>
+                            <a href="#">格兰菲迪</a>
+                            <a href="#">麦卡伦</a>
+                            <a href="#">轩尼诗</a>
+                            <a href="#">摩根船长</a>
+                            <a href="#">哈瓦纳俱乐部</a>
+                            <a href="#">人头马</a>
+                            <a href="#">绝对伏特加</a>
+                            <a href="#">斯米诺</a>
+                            <a href="#">苏连红</a>
+                            <a href="#">百加得</a>
+                            <a href="#">奥美加</a>
+                            <a href="#">豪帅</a>
+                            <a href="#">雷博士</a>
+                            <a href="#">百利</a>
+                            <a href="#">甘露</a>
+                            <a href="#">君度</a>
+                            <a href="#">哥顿</a>
+                            <a href="#">必富达</a>
+                            <a href="#">施格兰</a>
+                            <a href="#">马天尼</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div gsregion="3" gssnapshot="4" class="menu_cn" >
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/28401105387457241.png" width="280px" height="350px"/>
+                                </a>
+                           </div>      
+                        </div>
+                        <div class="l">
+                            <div class="cn_list">
+                                <b>国家</b>
+                                <a href="#">德国</a>
+                                <a href="#">比利时</a>
+                                <a href="#">丹麦</a>
+                            </div>
+                            <div class="cn_list">
+                                <b>种类</b>
+                                <a href="#">黄啤酒</a>
+                                <a href="#">白啤酒</a>
+                                <a href="#">黑啤酒</a>
+                            </div>
+                            <div class="cn_list">
+                                <b>品牌</b>
+                                <a href="#">智美</a>
+                                <a href="#">粉象</a>
+                                <a href="#">林德曼</a>
+                                <a href="#">罗斯福</a>
+                                <a href="#">格鲁特</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div gsregion="3" gssnapshot="5" class="menu_cn">
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/28401135434441359.png" width="280px" height="350px"/>
+                                </a>
+                           </div>      
+                        </div>
+                        <div class="cn_list">
+                            <b>种类</b>
+                            <a href="#">酒杯</a>
+                            <a href="#">醒酒器</a>
+                            <a href="#">酒刀</a>
+                            <a href="#">酒塞</a>
+                            <a href="#">酒柜</a>
+                            <a href="#">酒袋</a>
+                            <a href="#">酒壶</a>
+                            <a href="#">皮盒</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>品牌</b>
+                            <a href="#">石岛</a>
+                            <a href="#">巴卡拉</a>
+                            <a href="#">拉吉奥</a>
+                            <a href="#">富信</a>
+                            <a href="#">新潮</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div gsregion="3" gssnapshot="6" class="menu_cn">
+						<div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/28401125511890575.png" width="280px" height="350px"/>
+                                </a>
+                           </div>      
+                        </div>
+                        <div class="cn_list">
+                            <b>配件</b>
+                            <a href="#">耳机</a>
+                            <a href="#">移动电源</a>
+                            <a href="#">游戏手柄</a>
+                            <a href="#">遥控器</a>
+                            <a href="#">乐视Letv高清线</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>衍生品</b>
+                            <a href="#">公仔</a>
+                            <a href="#">自拍杆</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>体育周边</b>
+                            <a href="#">棒球帽</a>
+                            <a href="#">定制背包</a>
+                            <a href="#">马克杯</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </li>
+
+
+
+
+
+            <li><a class="gsexp " href="index.html">首页</a></li>
+            <li><a class="gsexp " target="_blank" href="index-1-MingZhuangZhenXuan.html">名庄臻选</a></li>
+            <li><a class="gsexp " target="_blank" href="index-2-XianShiShanGou.html">限时闪购</a></li>
+            <li><a class="gsexp " target="_blank" href="index-3-ZhengXiangGou.html">整箱购</a><img style="position:absolute;right:13px;top:-6px;" src="../img/icon-new.gif"></li>
+            <li><a class="gsexp " target="_blank" href="index-4-LeShiMeiJiu.html">乐视美酒</a></li>       
+            <li><a class="gsexp " target="_blank" href="index-5-RVFPingFen.html">RVF评分</a></li>     
+        </ul>
+    </div>
+    
+    
+    
+    
+    <!--头部四个开始-->
+    <div class="recommend">
+    	<!--1-->
+    	<div class="recommend_wap">
+    		<div class="recommend_img">
+	            <img class="lz" title="圣里奥干红葡萄酒" src="../img/img-Lie/1468905245329308_M.jpg">
+	        </div>
+	        <div class="recommend_text">
+	         <h3><a href="#" class="gsexp">圣里奥干红葡萄酒</a></h3>￥49.00
+	            <div class="recommend_BUTTON">
+	                <a href="javascript:void(0)" class="add_BTN J_addToCart">加入购物车</a>
+	            </div>
+	        </div>      
+    	</div>
+    	<!--2-->
+    	<div class="recommend_wap">
+    		<div class="recommend_img">
+	            <img class="lz" title="圣里奥干红葡萄酒" src="../img/img-Lie/1468905245329308_MD.jpg">
+	        </div>
+	        <div class="recommend_text">
+	         <h3><a href="#" class="gsexp">圣里奥干红葡萄酒</a></h3>￥49.00
+	            <div class="recommend_BUTTON">
+	                <a href="javascript:void(0)" class="add_BTN J_addToCart">加入购物车</a>
+	            </div>
+	        </div>
+    	</div>
+    	<!--3-->
+    	<div class="recommend_wap">
+    		<div class="recommend_img">
+	            <img class="lz" title="圣里奥干红葡萄酒" src="../img/img-Lie/6118303905533593_MD.jpg">
+	        </div>
+	        <div class="recommend_text">
+	         <h3><a href="#" class="gsexp">圣里奥干红葡萄酒</a></h3>￥49.00
+	            <div class="recommend_BUTTON">
+	                <a href="javascript:void(0)" class="add_BTN J_addToCart">加入购物车</a>
+	            </div>
+	        </div>
+    	</div>
+    	<!--4-->
+    	<div class="recommend_wap">
+    		<div class="recommend_img">
+	            <img class="lz" title="圣里奥干红葡萄酒" src="../img/img-Lie/24964358026464925_MD.jpg">
+	        </div>
+	        <div class="recommend_text">
+	         <h3><a href="#" class="gsexp">圣里奥干红葡萄酒</a></h3>￥49.00
+	            <div class="recommend_BUTTON">
+	                <a href="javascript:void(0)" class="add_BTN J_addToCart">加入购物车</a>
+	            </div>
+	        </div>
+    	</div>
+        
+        
+    </div>
+    <!--头部四个结束-->
+    <!--列表开始-->
+   	<div class="shop_list_style  pd-bottom20">
+        <!--首页开始-->
+        <div class="shop_list_menu clear">
+          <div class="lico01"><a href="index.html">首页</a></div>
+        </div>
+        <!--首页结束-->
+        <div class="menu_detail">
+            <div class="detail_stay">
+                <em class="c_t" style="color: #a40e59;">全部商品</em>
+                <em>商品筛选</em>
+            </div>
+          
+            <div class="detail_con">
+                <!-- 品牌开始 -->
+                <div class="detail_count">
+                    <a href="#;" class="receive feild_show"><span>展开</span><i class="tic"></i></a>
+                    <a href="#" class="plus_up J_more"><span>多选</span><i class="tic"></i></a>
+                    <div class="t_c">品牌：</div>
+                    <div class="bd">
+                        <div class="mn" id="commodity">
+                            <a class="J_alink" value="159" title="奥雷姆(Botellas)" href="#">
+                                <i></i>奥雷姆(Botellas)
+                            </a>  
+                            <a class="J_alink" value="157" title="昂首天歌(SILVER HEIGHTS)" href="#">
+                                <i></i>昂首天歌(SILVER HEIGHTS)
+                            </a>  
+                            <a class="J_alink" value="159" title="奥雷姆(Botellas)" href="#">
+                                <i></i>奥雷姆(Botellas)
+                            </a>  
+                            <a class="J_alink" value="157" title="昂首天歌(SILVER HEIGHTS)" href="#">
+                                <i></i>昂首天歌(SILVER HEIGHTS)
+                            </a>
+                            <a class="J_alink" value="159" title="奥雷姆(Botellas)" href="#">
+                                <i></i>奥雷姆(Botellas)
+                            </a>  
+                            <a class="J_alink" value="157" title="昂首天歌(SILVER HEIGHTS)" href="#">
+                                <i></i>昂首天歌(SILVER HEIGHTS)
+                            </a>
+                            <a class="J_alink" value="159" title="奥雷姆(Botellas)" href="#">
+                                <i></i>奥雷姆(Botellas)
+                            </a>  
+                            <a class="J_alink" value="157" title="昂首天歌(SILVER HEIGHTS)" href="#">
+                                <i></i>昂首天歌(SILVER HEIGHTS)
+                            </a>
+                            <a class="J_alink" value="159" title="奥雷姆(Botellas)" href="#">
+                                <i></i>奥雷姆(Botellas)
+                            </a>  
+                            <a class="J_alink" value="157" title="昂首天歌(SILVER HEIGHTS)" href="#">
+                                <i></i>昂首天歌(SILVER HEIGHTS)
+                            </a>
+                            <a class="J_alink" value="159" title="奥雷姆(Botellas)" href="#">
+                                <i></i>奥雷姆(Botellas)
+                            </a>  
+                            <a class="J_alink" value="157" title="昂首天歌(SILVER HEIGHTS)" href="#">
+                                <i></i>昂首天歌(SILVER HEIGHTS)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 品牌结束 -->
+                <!-- 分类开始 -->
+                <div class="detail_count">
+                    <div class="t_c">分类：</div>
+                    <div class="bd">
+                        <div class="mn">
+                            <a href="#" title="酒">酒</a>
+                            <a href="#" title="酒周边">酒周边</a>
+                            <a href="#" title="生态智能设备">生态智能设备</a>
+                            <a href="#" title="生态产品">生态产品</a>
+                            <a href="#" title="0">0</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分类结束 -->
+                <!-- 价格开始 -->
+                <div class="detail_count">
+                    <div class="t_c">价格：</div>
+                      <div class="bd">
+                        <div class="mn">
+                         <a class="J_alink" value="0to199" title="0~199" href="#">
+                           0~199</a>  
+                         <a class="J_alink" value="200to299" title="200~299" href="#">
+                           200~299</a>  
+                         <a class="J_alink" value="300to499" title="300~499" href="#">
+                           300~499</a>  
+                         <a class="J_alink" value="500to799" title="500~799" href="#">
+                           500~799</a>  
+                         <a class="J_alink" value="800to999" title="800~999" href="#">
+                           800~999</a>  
+                         <a class="J_alink" value="1000to1999" title="1000~1999" href="#">
+                           1000~1999</a>  
+                         <a class="J_alink" value="2000to20000" title="2000~20000" href="#">
+                           2000~20000</a>  
+                         <a class="J_alink" value="20001to5000000" title="20000以上" href="#">
+                           20000以上</a>  
+                    </div>
+                  </div>
+                </div>
+                <!-- 价格结束 -->
+            </div>
+        </div>
+    </div>
+	<!--列表结束-->
+	<!-- 默认排序开始 -->
+    <div class="shop_list_product">
+        <div class="shop_list_line">
+            <div class="line_link">
+                <a href="#" class="bon">默认排序</a>
+                <a href="#">销量</a>
+                <a href="#">价格</a>
+                <a href="#">上架时间</a>
+                <a href="#">好评度</a>
+            </div>
+            <div class="check">
+                <div class="in"><input type="checkbox" id="eb_type">自营</div>
+                <div class="in"><input type="checkbox" id="is_promotion">促销</div>
+                <div class="in"><input type="checkbox" id="is_postal">包邮</div>
+                <div class="in"><input type="checkbox" id="is_stock">仅显示有货</div>     
+            </div>
+            <div class="corner_page">
+              共2350个商品<span>|</span>1/59<a class="up round" id="pageup" href="#">◀上一页</a><a href="#" id="pagedown" class="next">下一页▶</a>
+            </div>
+        </div>
+        <div class="shop_list_item">
+            <ul>  
+                <!-- 1 -->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="乐客自由花起泡葡萄酒" src="../img/img-Lie/1473130336034962_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_HJwefPqT2">
+                             <span>赠品</span>￥59.00
+                        </div>
+                        <h2>乐客自由花起泡葡萄酒</h2>
+                          <p title=""></p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="乐客自由花起泡葡萄酒" src="../img/img-Lie/1473130336034962_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_HJwefPqT2">
+                             <span>赠品</span>￥59.00
+                        </div>
+                        <h2>乐客自由花起泡葡萄酒</h2>
+                          <p title=""></p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="乐客自由花起泡葡萄酒" src="../img/img-Lie/1473130336034962_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_HJwefPqT2">
+                             <span>赠品</span>￥59.00
+                        </div>
+                        <h2>乐客自由花起泡葡萄酒</h2>
+                          <p title=""></p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 4 -->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="乐客自由花起泡葡萄酒" src="../img/img-Lie/1473130336034962_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_HJwefPqT2">
+                             <span>赠品</span>￥59.00
+                        </div>
+                        <h2>乐客自由花起泡葡萄酒</h2>
+                          <p title=""></p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!--1-->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="轩尼诗 VSOP干邑白兰地 700ml" src="../img/img-Lie/28845932250022664_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_LJvGeVcEH">￥339.00</div>
+                        <h2>轩尼诗 VSOP干邑白兰地 700ml</h2>
+                          <p title="">丰满、圆润、高雅，且精致细腻的花香。</p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!--2-->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="轩尼诗 VSOP干邑白兰地 700ml" src="../img/img-Lie/28845932250022664_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_LJvGeVcEH">￥339.00</div>
+                        <h2>轩尼诗 VSOP干邑白兰地 700ml</h2>
+                          <p title="">丰满、圆润、高雅，且精致细腻的花香。</p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!--3-->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="轩尼诗 VSOP干邑白兰地 700ml" src="../img/img-Lie/28845932250022664_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_LJvGeVcEH">￥339.00</div>
+                        <h2>轩尼诗 VSOP干邑白兰地 700ml</h2>
+                          <p title="">丰满、圆润、高雅，且精致细腻的花香。</p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!--4-->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="轩尼诗 VSOP干邑白兰地 700ml" src="../img/img-Lie/28845932250022664_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_LJvGeVcEH">￥339.00</div>
+                        <h2>轩尼诗 VSOP干邑白兰地 700ml</h2>
+                          <p title="">丰满、圆润、高雅，且精致细腻的花香。</p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!--1-->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="*格鲁特·荣耀小麦白啤酒 500ml*24听/箱" src="../img/img-Lie/25313336364273526_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_LJvGeVcEH">￥198.00</div>
+                        <h2>*格鲁特·荣耀小麦白啤酒 500ml*24听/箱</h2>
+                          <p title=""></p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!--2-->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="*格鲁特·荣耀小麦白啤酒 500ml*24听/箱" src="../img/img-Lie/25313336364273526_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_LJvGeVcEH">￥198.00</div>
+                        <h2>*格鲁特·荣耀小麦白啤酒 500ml*24听/箱</h2>
+                          <p title=""></p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!--3-->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="*格鲁特·荣耀小麦白啤酒 500ml*24听/箱" src="../img/img-Lie/25313336364273526_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_LJvGeVcEH">￥198.00</div>
+                        <h2>*格鲁特·荣耀小麦白啤酒 500ml*24听/箱</h2>
+                          <p title=""></p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                <!--4-->
+                <li>
+                    <div class="mm">
+                        <div class="p_i">
+                            <a href="#" target="_blank"><img class="lz" title="*格鲁特·荣耀小麦白啤酒 500ml*24听/箱" src="../img/img-Lie/25313336364273526_M.jpg"></a>
+                        </div>
+                        <div class="p_m J_LJvGeVcEH">￥198.00</div>
+                        <h2>*格鲁特·荣耀小麦白啤酒 500ml*24听/箱</h2>
+                          <p title=""></p>
+                        <div class="type">
+                            <input type="text" value="1" class="productNum" min="1" max="1000">
+                            <div class="lic">
+                              <a class="up01 productAdd"></a>
+                              <a class="next02 nob productCut" href="javascript:void(0)"></a>
+                            </div>
+                           <div class="it_b"><a href="#" class="J_addToCart shop_car_BTN">加入购物车</a></div>
+                        </div>
+                    </div>
+                </li>
+                
+                
+                   
+                   
+                
+               
+                   
+            </ul>
+        </div>
+        <!--分页开始-->
+        <div id="Pagination" class="page">
+            <a class="tb lnom none result_prev">
+                <span></span><em>上一页</em>
+            </a>
+            <a class="stm">1</a>
+            <a class="tb">2</a>
+            <a class="tb">3</a>
+            <a class="tb">4</a>
+            <a class="ov">...</a>
+            <a class="tb" href="#">59</a>
+            <a class="tb rnom result_next" href="#">
+                <em>下一页</em><span></span>
+            </a>
+            <a class="ov">共59页 到第<input type="text" id="topagevalue" value="1">页</a>
+            <a id="topage" class="bv">确定</a>
+        </div>
+        <!--分页结束-->
+    </div>
+
+    <!-- 默认排序结束 -->
+    <!-- 大家都在买开始 -->
+    <div class="ducts-slide font-yahei">
+        <ul class="tlt" id="tltId">
+            <li id="buying" class="active">大家都在买</li>
+            <li id="recent_his" class="">最近浏览</li>
+        </ul>
+        <div class="bd">
+            <a class="btn-l" id="left01"></a>
+            <div class="mn">
+                <ul id="scrollImg01">
+                    <div>
+                    <!-- <div style="overflow: hidden; zoom: 1; width: 32766px;"> -->
+                        <div class="left02" id="left02Id">
+                            <!-- 1 -->
+                            <li>
+                                <img src="../img/img-Lie/1469605732564294_MD.jpg" title="法国灰雁伏特加 50ml">
+
+                                <h3>1法国灰雁伏特加 50ml</h3>
+
+                                <div class="price">￥88.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>                       
+                            <!-- 2 -->
+                            <li>
+                                <img src="../img/img-Lie/1471930353690402_MD.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>2乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>   
+                            <!-- 3 -->
+                            <li>
+                                <img src="../img/img-Lie/1471241102414924_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>3乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <img src="../img/img-Lie/1473130336034962_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>4乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li> 
+                            <!-- 5 -->
+                            <li>
+                                <img src="../img/img-Lie/21843119847077185_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>5乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li> 
+                            <!-- 6 -->
+                            <li>
+                                <img src="../img/img-Lie/24713899808023874_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>6乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li> 
+                            <!-- 7 -->
+                            <li>
+                                <img src="../img/img-Lie/24774637049763652_MD.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>7乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>    
+                            <!-- 8 -->
+                            <li>
+                                <img src="../img/img-Lie/30043956684775260_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>8乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+                            <!-- 9 -->
+                            <li>
+                                <img src="../img/img-Lie/1469605732564294_MD.jpg" title="法国灰雁伏特加 50ml">
+
+                                <h3>1法国灰雁伏特加 50ml</h3>
+
+                                <div class="price">￥88.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+                        </div>
+
+                        <div class="left02" style="display: none;">
+                            <!-- 1 -->
+                            <li>
+                                <img src="../img/img-Lie/1469605732564294_MD.jpg" title="法国灰雁伏特加 50ml">
+
+                                <h3>法国灰雁伏特加 50ml</h3>
+
+                                <div class="price">￥88.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>                      
+                            <!-- 2 -->
+                            <li>
+                                <img src="../img/img-Lie/1471930353690402_MD.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+                            <!--3-->
+                            <li>
+                                <img src="../img/img-Lie/18737778764390457_MD.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <a class="btn-r" id="right01"></a>
+        </div>
+    </div>
+
+    <!-- 大家都在买结束 -->
+
+	<!-- footer开始 -->
+  <div id="footer">
+      <div id="footer-slogen">
+          <dl>
+              <dt class="s1"></dt>
+              <dd><b>甄选全球葡萄酒</b></dd>
+          </dl>
+          <dl>
+              <dt class="s2"></dt>
+              <dd><b>社区智能化终端触达</b></dd>
+          </dl>
+          <dl>
+              <dt class="s3"></dt>
+              <dd><b>原产地高品质享受</b></dd>
+          </dl>
+          <dl>
+              <dt class="s4"></dt>
+              <dd><b>新葡萄酒品位生活</b></dd>
+          </dl>
+      </div>
+      <div id="footer-service">
+          <dl>
+              <dt>关于我们</dt>
+              <dd><a href="#">公司简介</a></dd>
+              <dd><a href="#">网酒基地</a></dd>
+              <dd><a href="#">媒体报道</a></dd>
+          </dl>
+          <dl>
+              <dt>新手指南</dt>
+              <dd><a href="#">新用户注册</a></dd>
+              <dd><a href="#">购物流程</a></dd>
+          </dl>
+          <dl>
+              <dt>会员相关</dt>
+              <dd><a href="#">会员等级</a></dd>
+              <dd><a href="#">积分政策</a></dd>
+              <dd><a href="#">会员权益</a></dd>
+          </dl>
+          <dl>
+              <dt>配送服务</dt>
+              <dd><a href="#">配送范围及时限</a></dd>
+              <dd><a href="#">配送运费(满99元免邮)</a></dd>
+              <dd><a href="#">运输包装说明</a></dd>
+              <dd><a href="#">发票制度</a></dd>
+          </dl>
+          <dl>
+              <dt>支付方式</dt>
+              <dd><a href="#">货到付款</a></dd>
+              <dd><a href="#">在线支付</a></dd>
+              <dd><a href="#">优惠券</a></dd>
+              <dd><a href="#">礼品卡/购物卡</a></dd>
+              <dd><a href="#">账户余额</a></dd>
+          </dl>
+          <dl>
+              <dt>售后服务</dt>
+              <dd><a href="#">退换货流程</a></dd>
+              <dd><a href="#">退款说明</a></dd>
+              <dd><a href="#">正品保障</a></dd>
+              <dd><a href="#">投诉建议</a></dd>
+          </dl>
+          <dl>
+              <dt>商家合作</dt>
+              <dd><a href="#">商家入驻</a></dd>
+              <dd><a href="#">平台规则</a></dd>
+              <dd><a href="#">招商方向</a></dd>
+          </dl>
+          <dl style="width:180px;">
+              <div class="slogen-app">
+                  <img src="../img/weibo.png">微博
+              </div>
+              <div class="slogen-app">
+                  <img src="../img/weixin.png">微信
+              </div>
+          </dl>
+          
+      </div>
+      <div id="footer-tips">
+          <div class="mn">
+              <div class="mn_left">
+                   <a href="#">友情链接</a> | 
+                   <a href="#">联系我们</a> | 
+                   <a href="#">隐私声明</a> | 
+                   <a href="#">媒体报道</a> | 
+                   <a href="#">消费者保护</a> | 
+                   <a href="#">真伪鉴别</a><br>
+                   食品流通许可证：SP1101081110120639         营业执照：9111010858442448XQ         公司地址：北京市海淀区学院南路68号20号楼1层126室 <br>
+                   北京网酒网电子商务股份有限公司 · 京ICP备16030607号-1         本网站中消费指南、售后服务、用户反馈及法定公示等内容并非广告 
+              </div>
+              <div class="mn_right">
+                  全国售后服务热线 : 4000-519-519<br>
+                  周一至周日：10：00-19：00
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- footer结束 -->
+
+	<!-- 顶部栏开始 -->
+        <div id="floatSearch" style="" class="fix_menu">
+            <div class="fix_wrap">
+              <a style="display:block;" class="fix_logo" href="http://www.wangjiu.com"></a>
+                <div class="fix_nav">
+                    <a href="/index.html">首页</a>
+                    <a href="/lelist-pc_level_id-1.html">葡萄酒</a>
+                    <a href="/leshop-pc_level_id-12.html">白酒</a>
+                    <a href="/lelist-pc_level_id-93.html">洋酒/烈酒</a>
+                    <a href="/lelist-pc_level_id-10.html">啤酒</a>
+                    <a href="/lelist-pc_level_id-284.html">酒周边</a>
+                </div>
+                <div class="fix_check">
+                    <input id="floatSearchContent" type="text" value="">
+                    <a href="javascript:;" id="floatSearchId" class="fix_BTN">搜索</a>
+                </div>
+            </div>
+        </div>
+    <!-- 顶部栏结束 -->
+
+
+
+
+
+</body>
+</html>
+<script type="text/javascript" src="../js/list.js"></script>

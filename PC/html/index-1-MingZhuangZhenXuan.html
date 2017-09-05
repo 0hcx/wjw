@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>名庄臻选</title>
+	<link rel="icon" href="http://img0.wangjiu.com/wj.ico" type="image/x-icon">
+  	<link rel="stylesheet" type="text/css" href="../css/common.css">
+  	<link rel="stylesheet" type="text/css" href="../css/index-1-MingZhuangZhenXuan.css">
+
+</head>
+<body>
+	<!-- header-tips 开始-->
+  	<div id="header-tips">
+        <ul class="mn">
+            <li class="menu">
+                <em>更多频道</em><i></i>
+                <ul>
+                  <li><a target="_blank" href="#">集团内购</a></li>
+                  <li><a target="_blank" href="#">名庄知识</a></li>
+                  <li><a target="_blank" href="#">酒迷社区</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <em>乐视生态</em><i></i>
+                <ul>
+                    <li><a target="_blank" href="#">乐视网</a></li>
+                    <li><a target="_blank" href="#">乐视商城</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank">提货卡</a></li>
+            <li class="menu">
+              <em><a href="#">会员俱乐部</a></em><i></i>
+                <ul>
+                    <li><a href="#" target="_blank">酒迷社区</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu">
+                <em><a href="javascript:void(0)" onclick="goUserCenter()">我的网酒</a></em><i></i>
+                <ul>
+                  <li><a href="javascript:void(0)" onclick="goOrderlist()">我的订单</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCoupon()">我的优惠券</a></li>
+                  <li><a href="javascript:void(0)" onclick="goPoint()">我的积分</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCollection()">我的收藏</a></li>                  
+                </ul>
+            </li>
+            <li id="loginMess" class="app" style="margin-right:15px;"><span>hi~欢迎来到网酒网</span><a href="javascript:;" id="qregister">快速注册</a>  <a id="login" href="javascript:;">登录</a></li> 
+            <li class="app">
+                <a target="_blank" href="#">手机网酒网</a>
+            </li>
+        </ul>
+    </div>
+    <!-- header-tips 结束-->
+    <!-- header-mn-z 开始 -->
+    <div id="header-mn-z">
+      <div id="header-mn">
+        <a href="index.html"><div class="logo"></div></a>
+        <div id="hd-car" class="topCart" style="">
+          <a href="cart.html" target="_blank">
+          <div class="car-hd">
+            <div class="car-tw" style="">我的购物车</div>
+            <div class="car-numb J_cartSumCount">0</div>
+            <i></i>
+          </div>
+        </a>
+      </div>  
+
+
+      <div id="hd-search">
+        <div class="mn searchClass">
+          <input id="searchContent" type="text" value="赏轩辕剑，品火玫瑰，6支低至299元 >>" class="search-text" style="color:#999;">
+          <a id="searchId" href="javascript:;" class="search-btn"></a>
+          <div class="search-tips">
+            <a href="#">葡萄酒</a>
+            <a href="#">/白酒</a>
+            <a href="#">/起泡酒</a>
+            <a href="#">/轩尼诗</a>
+            <a href="#">/买酒送手机</a>
+            <a href="#">/名庄</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header-mn-z 结束 -->
+
+	
+	
+	<!--手风琴开始-->
+	<div class="flash4">
+		<ul>
+	    	<li class="first">
+	        	<div class="imgTop"><img src="../img/img-Ming/3352098770b39fa58d474ba17ca08fc3.jpg" width="538" height="405"  alt="" class="tm"></div>
+	        </li>
+	        <li>
+	        	<div class="imgTop"><img src="../img/img-Ming/20150723060111882.jpg" width="538" height="405"  alt=""></div>
+	        </li>
+	        <li>
+	        	<div class="imgTop"><img src="../img/img-Ming/147909144784704044.JPEG" width="538" height="405"  alt=""></div>
+	        </li>
+	        <li>
+	        	<div class="imgTop"><img src="../img/img-Ming/5c287da0562911e6b26200163e00254c.jpg" width="538" height="405"  alt=""></div>
+	        </li>
+	        <li>
+	        	<div class="imgTop"><img src="../img/img-Ming/5197162_101607087098_2.jpg" width="538" height="405"  alt=""></div>
+	        </li>
+	        <li>
+	        	<div class="imgTop"><img src="../img/img-Ming/3352098770b39fa58d474ba17ca08fc3.jpg" width="538" height="405"  alt=""></div>
+	        </li>
+	        <li class="fast">
+	        	<div class="imgTop"><img src="../img/img-Ming/a35fd6076b961e60b97a5458549bd04f.jpg" width="538" height="405"  alt=""></div>
+	        </li>
+	    </ul>	
+	</div>
+
+	<!--手风琴结束-->
+	<!--<div class="banner_wrap" style="background:#09C">
+        <div id="advertId332" class="sld-ad">
+        	<img src="../img/img-Ming/1474377661547123.jpg" alt=""/>
+        </div>
+    </div>-->
+
+  	<!-- 今日闪购开始 -->
+  	<div class="main_title">
+		<h1>今日闪购</h1>
+	    <a target="_blank" href="#">更多闪购商品</a>
+	</div>
+	<div class="leading clear">
+    	<ul>
+            <li>
+	            <div class="end_time" stime="-33735811" etime="52663189">距特卖结束 14时09分48秒</div>
+	            <div class="lead_img"><img src="../img/img-Ming/1502762712551979.jpg"></div>
+	            <div class="lead_txt">
+	                <p>【名庄】靓茨伯庄园正牌干红葡萄酒 2008</p>
+	                <span>超二等庄水平的五级庄</span>
+	                <label><em>闪购价：</em>￥1199.00</label>
+	            </div>
+	        </li>
+	        <li class="no">
+	            <div class="end_time" stime="-33735812" etime="52663188">距特卖结束 14时09分48秒</div>
+	            <div class="lead_img"><img src="../img/img-Ming/1502762732232983.jpg"></div>
+	            <div class="lead_txt">
+	                <p>【名庄】卡农庄园正牌干红葡萄酒 2009</p>
+	                <span>口感丰满 屡获高分</span>
+	                <label><em>闪购价：</em>￥1348.00</label>
+	            </div>
+	        </li>
+	            <li>
+	            <div class="end_time" stime="-33735813" etime="52663187">距特卖结束 14时09分48秒</div>
+	            <div class="lead_img"><img src="../img/img-Ming/1502762748960549.jpg"></div>
+	            <div class="lead_txt">
+	                <p>【名庄】柏菲庄园正牌干红葡萄酒 2011</p>
+	                <span>圣埃美隆一级特等A酒庄</span>
+	                <label><em>闪购价：</em>￥1926.00</label>
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+  	<!-- 今日闪购结束 -->
+	<!-- 名庄现货开始 -->
+	<div class="main_title clear ming">
+		<h1>名庄现货</h1>
+	</div>
+	<!-- 名庄现货结束 -->
+	<!-- 1855列级名庄开始 -->
+	<div class="main_title">
+    	<h1>1855列级名庄</h1>
+	    <a target="_blank" href="#">更多商品&gt;&gt;</a>
+	</div>
+	<div class="some_list clear one">
+	  	<ul>
+	  		<!-- 1 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】佳得美庄园副牌干红葡萄酒 2013</p>
+	              	<span><em>￥</em>129.00</span>
+	            </div>
+	            <div class="list_content">
+	              
+	            	<div class="label_left"></div>
+	              	<div class="img_right"><img src="../img/img-Ming/1471512291113612.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 2 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】佳得美庄园副牌干红葡萄酒 2013</p>
+	              	<span><em>￥</em>129.00</span>
+	            </div>
+	            <div class="list_content">
+	              
+	            	<div class="label_left"></div>
+	              	<div class="img_right"><img src="../img/img-Ming/1471512291113612.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 3 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】佳得美庄园副牌干红葡萄酒 2013</p>
+	              	<span><em>￥</em>129.00</span>
+	            </div>
+	            <div class="list_content">
+	              
+	            	<div class="label_left"></div>
+	              	<div class="img_right"><img src="../img/img-Ming/1471512291113612.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 4 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】佳得美庄园副牌干红葡萄酒 2013</p>
+	              	<span><em>￥</em>129.00</span>
+	            </div>
+	            <div class="list_content">
+	              
+	            	<div class="label_left"></div>
+	              	<div class="img_right"><img src="../img/img-Ming/1471512291113612.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 5 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】杜特庄园副牌红葡萄酒 2011</p>
+	              	<span><em>￥</em>189.00</span>
+	            </div>
+	            <div class="list_content">
+	              
+	            	<div class="label_left"></div>
+	              	<div class="img_right"><img src="../img/img-Ming/1473748795441156.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 6 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】杜特庄园副牌红葡萄酒 2011</p>
+	              	<span><em>￥</em>189.00</span>
+	            </div>
+	            <div class="list_content">
+	              
+	            	<div class="label_left"></div>
+	              	<div class="img_right"><img src="../img/img-Ming/1473748795441156.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 7 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】杜特庄园副牌红葡萄酒 2011</p>
+	              	<span><em>￥</em>189.00</span>
+	            </div>
+	            <div class="list_content">
+	              
+	            	<div class="label_left"></div>
+	              	<div class="img_right"><img src="../img/img-Ming/1473748795441156.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 8 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】杜特庄园副牌红葡萄酒 2011</p>
+	              	<span><em>￥</em>189.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              	<div class="img_right"><img src="../img/img-Ming/1473748795441156.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 9 -->
+	        <li>
+	        	<div class="list_title">
+	                <p>【名庄】圣皮尔酒庄正牌干红葡萄酒 2012</p>
+	                <p>Chateau Saint-Pierre 2012</p>  
+	              	<span><em>￥</em>519.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+                        <p><em>JR</em>17</p>
+                        <p><em>ST</em>88-91</p>
+	                </div>
+	              	<div class="img_right"><img src="../img/img-Ming/26771578201005372.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 10 -->
+	        <li>
+	        	<div class="list_title">
+	                <p>【名庄】圣皮尔酒庄正牌干红葡萄酒 2012</p>
+	                <p>Chateau Saint-Pierre 2012</p>  
+	              	<span><em>￥</em>519.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+                        <p><em>JR</em>17</p>
+                        <p><em>ST</em>88-91</p>
+	                </div>
+	              	<div class="img_right"><img src="../img/img-Ming/26771578201005372.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 11 -->
+	        <li>
+	        	<div class="list_title">
+	                <p>【名庄】圣皮尔酒庄正牌干红葡萄酒 2012</p>
+	                <p>Chateau Saint-Pierre 2012</p>  
+	              	<span><em>￥</em>519.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+                        <p><em>JR</em>17</p>
+                        <p><em>ST</em>88-91</p>
+	                </div>
+	              	<div class="img_right"><img src="../img/img-Ming/26771578201005372.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 12 -->
+	        <li>
+	        	<div class="list_title">
+	                <p>【名庄】圣皮尔酒庄正牌干红葡萄酒 2012</p>
+	                <p>Chateau Saint-Pierre 2012</p>  
+	              	<span><em>￥</em>519.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+                        <p><em>JR</em>17</p>
+                        <p><em>ST</em>88-91</p>
+	                </div>
+	              	<div class="img_right"><img src="../img/img-Ming/26771578201005372.jpg"></div>
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+	<!-- 1855列级名庄结束 -->
+	<!-- 波尔多右岸名庄开始 -->
+	<div class="main_title">
+	    <h1>波尔多右岸名庄</h1>
+	    <a target="_blank" href="#">更多商品&gt;&gt;</a>
+	</div>
+	<div class="some_list clear two">
+	  	<ul>
+	  		<!-- 1 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】卡农庄园正牌干红葡萄酒 2013</p>
+	                <p>CHATEAU CANON</p>  
+	              <span><em>￥</em>469.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+	                </div>
+	              <div class="img_right"><img src="../img/img-Ming/1471507610367789.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 2 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】卡农庄园正牌干红葡萄酒 2013</p>
+	                <p>CHATEAU CANON</p>  
+	              <span><em>￥</em>469.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+	                </div>
+	              <div class="img_right"><img src="../img/img-Ming/1471507610367789.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 3 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】卡农庄园正牌干红葡萄酒 2013</p>
+	                <p>CHATEAU CANON</p>  
+	              <span><em>￥</em>469.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+	                </div>
+	              <div class="img_right"><img src="../img/img-Ming/1471507610367789.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 4 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】卡农庄园正牌干红葡萄酒 2013</p>
+	                <p>CHATEAU CANON</p>  
+	              <span><em>￥</em>469.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+	                </div>
+	              <div class="img_right"><img src="../img/img-Ming/1471507610367789.jpg"></div>
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+	<!-- 波尔多右岸名庄结束 -->
+	<!-- 法国中级庄开始 -->
+	<div class="main_title">
+	    <h1>法国中级庄</h1>
+	    <a target="_blank" href="#">更多商品&gt;&gt;</a>
+	</div>
+	<div class="some_list clear three">
+	  	<ul>
+	  		<!-- 1 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【中级庄】塞瑞朗酒庄干红葡萄酒 2008</p>
+	                <p>Chateau Serilhan 2008</p>  
+	              <span><em>￥</em>138.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+                        <p><em>JR</em>16</p>
+                        <p><em>ST</em>87-89</p>
+                	</div>
+	              <div class="img_right"><img src="../img/img-Ming/9238831984050107.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 2 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【中级庄】塞瑞朗酒庄干红葡萄酒 2008</p>
+	                <p>Chateau Serilhan 2008</p>  
+	              <span><em>￥</em>138.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+                        <p><em>JR</em>16</p>
+                        <p><em>ST</em>87-89</p>
+                	</div>
+	              <div class="img_right"><img src="../img/img-Ming/9238831984050107.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 3 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【中级庄】塞瑞朗酒庄干红葡萄酒 2008</p>
+	                <p>Chateau Serilhan 2008</p>  
+	              <span><em>￥</em>138.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+                        <p><em>JR</em>16</p>
+                        <p><em>ST</em>87-89</p>
+                	</div>
+	              <div class="img_right"><img src="../img/img-Ming/9238831984050107.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 4 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【中级庄】塞瑞朗酒庄干红葡萄酒 2008</p>
+	                <p>Chateau Serilhan 2008</p>  
+	              <span><em>￥</em>138.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left">
+                        <p><em>JR</em>16</p>
+                        <p><em>ST</em>87-89</p>
+                	</div>
+	              <div class="img_right"><img src="../img/img-Ming/9238831984050107.jpg"></div>
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+	<!-- 法国中级庄结束 -->
+	<!-- 法国勃艮第名庄开始 -->
+	<div class="main_title">
+	    <h1>法国勃艮第名庄</h1>
+	    <a target="_blank" href="#">更多商品&gt;&gt;</a>
+	</div>
+	<div class="some_list clear three">
+	  	<ul>
+	  		<!-- 1 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】阿诺酒庄 伏旧园特级干红葡萄酒 2008</p>
+	                <p>Domaine Arnoux Lachaux Clos de Vougeot Grand Cru 2008</p>  
+	              <span><em>￥</em>1560.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              <div class="img_right"><img src="../img/img-Ming/1487740930883799.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 2 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】阿诺酒庄 伏旧园特级干红葡萄酒 2008</p>
+	                <p>Domaine Arnoux Lachaux Clos de Vougeot Grand Cru 2008</p>  
+	              <span><em>￥</em>1560.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              <div class="img_right"><img src="../img/img-Ming/1487740930883799.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 3 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】阿诺酒庄 伏旧园特级干红葡萄酒 2008</p>
+	                <p>Domaine Arnoux Lachaux Clos de Vougeot Grand Cru 2008</p>  
+	              <span><em>￥</em>1560.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              <div class="img_right"><img src="../img/img-Ming/1487740930883799.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 4 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】阿诺酒庄 伏旧园特级干红葡萄酒 2008</p>
+	                <p>Domaine Arnoux Lachaux Clos de Vougeot Grand Cru 2008</p>  
+	              <span><em>￥</em>1560.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              <div class="img_right"><img src="../img/img-Ming/1487740930883799.jpg"></div>
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+	<!-- 法国勃艮第名庄结束 -->
+    <!-- 世界名庄开始 -->
+	<div class="main_title">
+	    <h1>世界名庄</h1>
+	    <a target="_blank" href="#">更多商品&gt;&gt;</a>
+	</div>
+	<div class="some_list clear three">
+	  	<ul>
+	  		<!-- 1 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】芬尼干红 2006</p>
+	                <p>Stephanie Red Wine 2006</p>  
+	              <span><em>￥</em>990.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              <div class="img_right"><img src="../img/img-Ming/12004503136962963.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 2 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】芬尼干红 2006</p>
+	                <p>Stephanie Red Wine 2006</p>  
+	              <span><em>￥</em>990.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              <div class="img_right"><img src="../img/img-Ming/12004503136962963.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 3 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】芬尼干红 2006</p>
+	                <p>Stephanie Red Wine 2006</p>  
+	              <span><em>￥</em>990.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              <div class="img_right"><img src="../img/img-Ming/12004503136962963.jpg"></div>
+	            </div>
+	        </li>
+	        <!-- 4 -->
+	    	<li>
+	        	<div class="list_title">
+	                <p>【名庄】芬尼干红 2006</p>
+	                <p>Stephanie Red Wine 2006</p>  
+	              <span><em>￥</em>990.00</span>
+	            </div>
+	            <div class="list_content">
+	            	<div class="label_left"></div>
+	              <div class="img_right"><img src="../img/img-Ming/12004503136962963.jpg"></div>
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+	<!-- 世界名庄结束 -->
+
+	<div class="latest_news clear">
+		<!-- 名庄知识开始 -->
+        <div class="latest_news_left">
+          	<div class="news_title"><a href="#">更多&gt;&gt;</a>名庄知识</div>
+        	<div class="news_con">
+                <div class="news_ing">
+                  	<div class="ing_img">
+                    	<img src="../img/img-Ming/1473312692818972.jpg">
+                  	</div>
+                  	<p><a href="#" target="_blank">菲斯奈特 斗牛士精神的化身</a></p>
+                 	<a href="#" target="_blank">
+                  		一说到起泡酒，很多人自然而然地就会想到法国的香槟，其实，起泡...
+                 	</a>
+                </div>
+                <div class="news_ing">
+                  	<div class="ing_img">
+                    	<img src="../img/img-Ming/1473312692818972.jpg">
+                  	</div>
+                  	<p><a href="#" target="_blank">菲斯奈特 斗牛士精神的化身</a></p>
+                 	<a href="#" target="_blank">
+                  		一说到起泡酒，很多人自然而然地就会想到法国的香槟，其实，起泡...
+                 	</a>
+                </div>
+                <div class="solid clear"></div>
+               	<div class="news_ing">
+                  	<div class="ing_img">
+                    	<img src="../img/img-Ming/1473312692818972.jpg">
+                  	</div>
+                  	<p><a href="#" target="_blank">菲斯奈特 斗牛士精神的化身</a></p>
+                 	<a href="#" target="_blank">
+                  		一说到起泡酒，很多人自然而然地就会想到法国的香槟，其实，起泡...
+                 	</a>
+                </div>
+                <div class="news_ing">
+                  	<div class="ing_img">
+                    	<img src="../img/img-Ming/1473312692818972.jpg">
+                  	</div>
+                  	<p><a href="#" target="_blank">菲斯奈特 斗牛士精神的化身</a></p>
+                 	<a href="#" target="_blank">
+                  		一说到起泡酒，很多人自然而然地就会想到法国的香槟，其实，起泡...
+                 	</a>
+                </div>
+                <div class="solid clear"></div>
+            </div>        
+        </div>
+        <!-- 葡萄酒知识 -->
+	    <div class="latest_news_right">
+	    	<div class="news_title"><a href="#">更多&gt;&gt;</a>葡萄酒知识</div>
+	        <ul>
+              	<li>
+                	<div class="w"><img src="../img/img-Ming/1473054301395520.jpg"></div>
+               		<p><a href="#" target="_blank">葡萄酒在餐桌上的搭配秘籍</a></p>
+                  	<a href="#" target="_blank">
+                  	在为葡萄酒配餐时，我们需要考虑葡萄酒和食物风味之间的和谐统一...
+                	</a>
+              	</li>
+              	<li>
+                	<div class="w"><img src="../img/img-Ming/1473054301395520.jpg"></div>
+               		<p><a href="#" target="_blank">葡萄酒在餐桌上的搭配秘籍</a></p>
+                  	<a href="#" target="_blank">
+                  	在为葡萄酒配餐时，我们需要考虑葡萄酒和食物风味之间的和谐统一...
+                	</a>
+              	</li>
+	            <li>
+                	<div class="w"><img src="../img/img-Ming/1473054301395520.jpg"></div>
+               		<p><a href="#" target="_blank">葡萄酒在餐桌上的搭配秘籍</a></p>
+                  	<a href="#" target="_blank">
+                  	在为葡萄酒配餐时，我们需要考虑葡萄酒和食物风味之间的和谐统一...
+                	</a>
+              	</li>
+	        </ul>
+	    </div>
+	</div>
+
+	<!-- footer开始 -->
+    <div id="footer">
+        <div id="footer-slogen">
+            <dl>
+                <dt class="s1"></dt>
+                <dd><b>甄选全球葡萄酒</b></dd>
+            </dl>
+            <dl>
+                <dt class="s2"></dt>
+                <dd><b>社区智能化终端触达</b></dd>
+            </dl>
+            <dl>
+                <dt class="s3"></dt>
+                <dd><b>原产地高品质享受</b></dd>
+            </dl>
+            <dl>
+                <dt class="s4"></dt>
+                <dd><b>新葡萄酒品位生活</b></dd>
+            </dl>
+        </div>
+        <div id="footer-service">
+            <dl>
+                <dt>关于我们</dt>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">网酒基地</a></dd>
+                <dd><a href="#">媒体报道</a></dd>
+            </dl>
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a href="#">新用户注册</a></dd>
+                <dd><a href="#">购物流程</a></dd>
+            </dl>
+            <dl>
+                <dt>会员相关</dt>
+                <dd><a href="#">会员等级</a></dd>
+                <dd><a href="#">积分政策</a></dd>
+                <dd><a href="#">会员权益</a></dd>
+            </dl>
+            <dl>
+                <dt>配送服务</dt>
+                <dd><a href="#">配送范围及时限</a></dd>
+                <dd><a href="#">配送运费(满99元免邮)</a></dd>
+                <dd><a href="#">运输包装说明</a></dd>
+                <dd><a href="#">发票制度</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a href="#">货到付款</a></dd>
+                <dd><a href="#">在线支付</a></dd>
+                <dd><a href="#">优惠券</a></dd>
+                <dd><a href="#">礼品卡/购物卡</a></dd>
+                <dd><a href="#">账户余额</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a href="#">退换货流程</a></dd>
+                <dd><a href="#">退款说明</a></dd>
+                <dd><a href="#">正品保障</a></dd>
+                <dd><a href="#">投诉建议</a></dd>
+            </dl>
+            <dl>
+                <dt>商家合作</dt>
+                <dd><a href="#">商家入驻</a></dd>
+                <dd><a href="#">平台规则</a></dd>
+                <dd><a href="#">招商方向</a></dd>
+            </dl>
+            <dl style="width:180px;">
+                <div class="slogen-app">
+                    <img src="../img/weibo.png">微博
+                </div>
+                <div class="slogen-app">
+                    <img src="../img/weixin.png">微信
+                </div>
+            </dl>
+            
+        </div>
+        <div id="footer-tips">
+            <div class="mn">
+                <div class="mn_left">
+                     <a href="#">友情链接</a> | 
+                     <a href="#">联系我们</a> | 
+                     <a href="#">隐私声明</a> | 
+                     <a href="#">媒体报道</a> | 
+                     <a href="#">消费者保护</a> | 
+                     <a href="#">真伪鉴别</a><br>
+                     食品流通许可证：SP1101081110120639         营业执照：9111010858442448XQ         公司地址：北京市海淀区学院南路68号20号楼1层126室 <br>
+                     北京网酒网电子商务股份有限公司 · 京ICP备16030607号-1         本网站中消费指南、售后服务、用户反馈及法定公示等内容并非广告 
+                </div>
+                <div class="mn_right">
+                    全国售后服务热线 : 4000-519-519<br>
+                    周一至周日：10：00-19：00
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer结束 -->
+
+
+
+
+</body>
+</html>
+<!--<script type="text/javascript" src="../js/jquery.min.js"></script>-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/index-1-MingZhuangZhenXuan.js" ></script>

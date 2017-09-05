@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="icon" href="http://img0.wangjiu.com/wj.ico" type="image/x-icon">
+  	<link rel="stylesheet" type="text/css" href="../css/common.css">
+  	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+
+</head>
+<body>
+	<!-- header-tips 开始-->
+  	<div id="header-tips">
+        <ul class="mn">
+            <li class="menu">
+                <em>更多频道</em><i></i>
+                <ul>
+                  <li><a target="_blank" href="#">集团内购</a></li>
+                  <li><a target="_blank" href="#">名庄知识</a></li>
+                  <li><a target="_blank" href="#">酒迷社区</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <em>乐视生态</em><i></i>
+                <ul>
+                    <li><a target="_blank" href="#">乐视网</a></li>
+                    <li><a target="_blank" href="#">乐视商城</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank">提货卡</a></li>
+            <li class="menu">
+              <em><a href="#">会员俱乐部</a></em><i></i>
+                <ul>
+                    <li><a href="#" target="_blank">酒迷社区</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu">
+                <em><a href="javascript:void(0)" onclick="goUserCenter()">我的网酒</a></em><i></i>
+                <ul>
+                  <li><a href="javascript:void(0)" onclick="goOrderlist()">我的订单</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCoupon()">我的优惠券</a></li>
+                  <li><a href="javascript:void(0)" onclick="goPoint()">我的积分</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCollection()">我的收藏</a></li>                  
+                </ul>
+            </li>
+            <li id="loginMess" class="app" style="margin-right:15px; color: #000000;"><span>hi~欢迎来到网酒网</span><a href="javascript:;" id="qregister">快速注册</a>  <a id="login" href="javascript:;">登录</a></li> 
+            <li class="app">
+                <a target="_blank" href="#">手机网酒网</a>
+            </li>
+        </ul>
+    </div>
+    <!-- header-tips 结束-->
+    <!-- lecar_head开始 -->
+    <div class="lecar_head" style="height:120px;">
+	    <div class="lecar_wap">
+	        <div class="head_ico"><a href="/index.html" target="_blank"><img src="../img/img-Cart/leico.png"></a></div>
+	        <div class="head_buid">购物车</div>
+	        <div class="head_effect">
+	            <div class="effect_bg">
+	                <p class="running" style="width:30%;"></p>
+	                  
+	            </div>
+	        </div>
+	    </div>
+	    <!--<div style="border-top:2px solid #f9f9f9;width:100%;background:#fff">
+	        <div style="line-height:30px;height:30px;font-size:12px;width:980px;margin:0 auto;overflow:hidden;">
+	            <div style="float:left;display:inline;margin-top:8px;height:16px;display:none;"><img src="http://www.wangjiu.com/htmlResource/images/global/alertTips.png" width="16px" height="16px"></div>
+	          <a style="float:left;display:block;margin-left:6px;color:#003b5c;display:none;" href="http://www.wangjiu.com/new/detail-aid-4027.html" target="_blank">由于近期我国部分地区气温下降较快，为了保障酒的品质，<span style="color:#cc0000;">订单自2016年11月20日起做出以下调整;</span></a>
+	            <div style="float:right;display:none;color:#cc0000;">活动：乐乐花全场3期免息</div>
+	        </div>
+	    </div>-->
+	</div>
+    <!-- lecar_head结束 -->
+    
+    
+    <!--主体开始-->
+    <div id="loading" style="text-align:center">
+    	<div class="lecar_wap">
+			<div class="lepay_wrap" id="lepay_wrap" style="margin:0 auto;">
+			    <div class="lepay_content">
+			        <div class="none_shop">
+			            <p>您的购物车空空的哦，去逛逛吧！</p>
+			            <a href="index.html">去购物&gt;&gt;</a>
+		            </div>
+		        </div>
+		    </div>
+		  </div>
+    </div>
+    <!--主体结束-->
+    
+    
+    
+    
+    
+    
+    
+	
+    
+
+
+
+
+
+
+  <!-- 大家都在买开始 -->
+    <div class="ducts-slide font-yahei">
+        <ul class="tlt" id="tltId">
+            <li id="buying" class="active">大家都在买</li>
+            <li id="recent_his" class="">最近浏览</li>
+        </ul>
+        <div class="bd">
+            <a class="btn-l" id="left01"></a>
+            <div class="mn">
+                <ul id="scrollImg01">
+                    <div>
+                    <!-- <div style="overflow: hidden; zoom: 1; width: 32766px;"> -->
+                        <div class="left02" id="left02Id">
+                            <!-- 1 -->
+                            <li>
+                                <img src="../img/img-Lie/1469605732564294_MD.jpg" title="法国灰雁伏特加 50ml">
+
+                                <h3>1法国灰雁伏特加 50ml</h3>
+
+                                <div class="price">￥88.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>                       
+                            <!-- 2 -->
+                            <li>
+                                <img src="../img/img-Lie/1471930353690402_MD.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>2乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>   
+                            <!-- 3 -->
+                            <li>
+                                <img src="../img/img-Lie/1471241102414924_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>3乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <img src="../img/img-Lie/1473130336034962_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>4乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li> 
+                            <!-- 5 -->
+                            <li>
+                                <img src="../img/img-Lie/21843119847077185_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>5乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li> 
+                            <!-- 6 -->
+                            <li>
+                                <img src="../img/img-Lie/24713899808023874_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>6乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li> 
+                            <!-- 7 -->
+                            <li>
+                                <img src="../img/img-Lie/24774637049763652_MD.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>7乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>    
+                            <!-- 8 -->
+                            <li>
+                                <img src="../img/img-Lie/30043956684775260_M.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>8乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+                            <!-- 9 -->
+                            <li>
+                                <img src="../img/img-Lie/1469605732564294_MD.jpg" title="法国灰雁伏特加 50ml">
+
+                                <h3>1法国灰雁伏特加 50ml</h3>
+
+                                <div class="price">￥88.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+                        </div>
+
+                        <div class="left02" style="display: none;">
+                            <!-- 1 -->
+                            <li>
+                                <img src="../img/img-Lie/1469605732564294_MD.jpg" title="法国灰雁伏特加 50ml">
+
+                                <h3>法国灰雁伏特加 50ml</h3>
+
+                                <div class="price">￥88.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>                      
+                            <!-- 2 -->
+                            <li>
+                                <img src="../img/img-Lie/1471930353690402_MD.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+                            <!--3-->
+                            <li>
+                                <img src="../img/img-Lie/18737778764390457_MD.jpg" title="乐美雅EFFULGENCE 绚烂直身杯450ML">
+
+                                <h3>乐美雅EFFULGENCE 绚烂直身杯450ML</h3>
+
+                                <div class="price">￥12.00</div>
+
+                                <a class="btn J_addToCart">加入购物车</a>
+                            </li>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <a class="btn-r" id="right01"></a>
+        </div>
+    </div>
+
+    <!-- 大家都在买结束 -->
+
+
+    <!-- footer开始 -->
+  <div id="footer">
+      <div id="footer-slogen">
+          <dl>
+              <dt class="s1"></dt>
+              <dd><b>甄选全球葡萄酒</b></dd>
+          </dl>
+          <dl>
+              <dt class="s2"></dt>
+              <dd><b>社区智能化终端触达</b></dd>
+          </dl>
+          <dl>
+              <dt class="s3"></dt>
+              <dd><b>原产地高品质享受</b></dd>
+          </dl>
+          <dl>
+              <dt class="s4"></dt>
+              <dd><b>新葡萄酒品位生活</b></dd>
+          </dl>
+      </div>
+      
+      <div id="footer-tips">
+          <div class="mn">
+              <div class="mn_left">
+                   <a href="#">友情链接</a> | 
+                   <a href="#">联系我们</a> | 
+                   <a href="#">隐私声明</a> | 
+                   <a href="#">媒体报道</a> | 
+                   <a href="#">消费者保护</a> | 
+                   <a href="#">真伪鉴别</a><br>
+                   食品流通许可证：SP1101081110120639         营业执照：9111010858442448XQ         公司地址：北京市海淀区学院南路68号20号楼1层126室 <br>
+                   北京网酒网电子商务股份有限公司 · 京ICP备16030607号-1         本网站中消费指南、售后服务、用户反馈及法定公示等内容并非广告 
+              </div>
+              <div class="mn_right">
+                  全国售后服务热线 : 4000-519-519<br>
+                  周一至周日：10：00-19：00
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- footer结束 -->
+
+
+
+
+
+</body>
+</html>
+<!--<script type="text/javascript" src="../js/jquery.min.js"></script>-->
+<script type="text/javascript" src="../js/cart.js" ></script>

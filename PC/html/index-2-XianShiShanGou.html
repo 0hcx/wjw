@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>限时闪购</title>
+	<link rel="icon" href="http://img0.wangjiu.com/wj.ico" type="image/x-icon">
+  	<link rel="stylesheet" type="text/css" href="../css/index-2-XianShiShanGou.css">
+  	<link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+<body>
+	<!-- header-tips 开始-->
+  	<div id="header-tips">
+        <ul class="mn">
+            <li class="menu">
+                <em>更多频道</em><i></i>
+                <ul>
+                  <li><a target="_blank" href="#">集团内购</a></li>
+                  <li><a target="_blank" href="#">名庄知识</a></li>
+                  <li><a target="_blank" href="#">酒迷社区</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <em>乐视生态</em><i></i>
+                <ul>
+                    <li><a target="_blank" href="#">乐视网</a></li>
+                    <li><a target="_blank" href="#">乐视商城</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank">提货卡</a></li>
+            <li class="menu">
+              <em><a href="#">会员俱乐部</a></em><i></i>
+                <ul>
+                    <li><a href="#" target="_blank">酒迷社区</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu">
+                <em><a href="javascript:void(0)" onclick="goUserCenter()">我的网酒</a></em><i></i>
+                <ul>
+                  <li><a href="javascript:void(0)" onclick="goOrderlist()">我的订单</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCoupon()">我的优惠券</a></li>
+                  <li><a href="javascript:void(0)" onclick="goPoint()">我的积分</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCollection()">我的收藏</a></li>                  
+                </ul>
+            </li>
+            <li id="loginMess" class="app" style="margin-right:15px;"><span>hi~欢迎来到网酒网</span><a href="javascript:;" id="qregister">快速注册</a>  <a id="login" href="javascript:;">登录</a></li> 
+            <li class="app">
+                <a target="_blank" href="#">手机网酒网</a>
+            </li>
+        </ul>
+    </div>
+    <!-- header-tips 结束-->
+    <!-- header-mn-z 开始 -->
+    <div id="header-mn-z">
+      	<div id="header-mn">
+        	<a href="index.html"><div class="logo"></div></a>
+        	<div id="hd-car" class="topCart" style="">
+	          	<a href="cart.html" target="_blank">
+	          	<div class="car-hd">
+	            	<div class="car-tw" style="">我的购物车</div>
+	            	<div class="car-numb J_cartSumCount">0</div>
+	            	<i></i>
+	          	</div>
+        		</a>
+      		</div>  
+
+
+      		<div id="hd-search">
+        		<div class="mn searchClass">
+          			<input id="searchContent" type="text" value="赏轩辕剑，品火玫瑰，6支低至299元 >>" class="search-text" style="color:#999;">
+          			<a id="searchId" href="javascript:;" class="search-btn"></a>
+          			<div class="search-tips">
+			            <a href="#">葡萄酒</a>
+			            <a href="#">/白酒</a>
+			            <a href="#">/起泡酒</a>
+			            <a href="#">/轩尼诗</a>
+			            <a href="#">/买酒送手机</a>
+			            <a href="#">/名庄</a>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+  	<!-- header-mn-z 结束 -->
+    <!-- 今日闪购导航栏开始 -->
+    <div class="fast_menu">
+      <ul>
+          <li><a href="#" class="main">闪购频道</a></li>
+          <li><a href="index-2-XianShiShanGou.html" class="on">今日闪购</a></li>
+          <li><a href="index-2-zi-MingRiYuGao.html">明日预告</a></li>
+      </ul>
+    </div>
+    <!-- 今日闪购导航栏结束 -->
+    <div class="fast_wrap">
+      <!--倒计时开始-->
+      <div class="o_clock clear">
+        <p class="time" style="display: none;"></p>
+          <div class="sign">
+            <div class="sign_txt"><p>今日闪购</p>十点准时开抢！</div>
+          </div>
+      <div class="limit"><p class="hour">10</p><p class="minute">09</p><p class="second">17</p></div>
+      </div>
+    </div>
+    <!--倒计时结束-->
+    
+    <!-- 今日闪购内容开始 -->
+    <div class="leading clear">
+      <ul>
+        <li>
+          <div class="lead_img"><img id="img_01" src="../img/img-Shan/1502762552383757.jpg"></div>
+            <div class="lead_txt">
+              <span>蕴含柑橘和菠萝的馥郁芬香</span>
+              <p>库马拉开葡干白葡萄酒</p>
+              <label><em>闪购价：</em>￥39.00</label>
+          </div>
+        </li>
+        <li>
+          <div class="lead_img"><img id="img_02" title="库马拉开葡干白葡萄酒" src="../img/img-Shan/1502762580139824.jpg"></div>
+            <div class="lead_txt">
+              <span>蕴含柑橘和菠萝的馥郁芬香</span>
+              <p>库马拉开葡干白葡萄酒</p>
+              <label><em>闪购价：</em>￥39.00</label>
+          </div>
+        </li>
+        <li>
+          <div class="lead_img"><img id="img_03" title="库马拉开葡干白葡萄酒" src="../img/img-Shan/1502762601919937.jpg"></div>
+            <div class="lead_txt">
+              <span>蕴含柑橘和菠萝的馥郁芬香</span>
+              <p>库马拉开葡干白葡萄酒</p>
+              <label><em>闪购价：</em>￥39.00</label>
+          </div>
+        </li>
+        <li>
+          <div class="lead_img"><img title="太阳花赤霞珠红2012" src="../img/img-Shan/1502762627108532.jpg"></div>
+            <div class="lead_txt">
+              <span>口感丰满 屡获高分</span>
+              <p>太阳花赤霞珠红2012</p>
+              <label><em>闪购价：</em>￥1199.00</label>
+          </div>
+        </li>
+
+        <li>
+          <div class="lead_img"><img title="太阳花赤霞珠红2012" src="../img/img-Shan/1502762648831697.jpg"></div>
+            <div class="lead_txt">
+              <span>口感丰满 屡获高分</span>
+              <p>太阳花赤霞珠红2012</p>
+              <label><em>闪购价：</em>￥1199.00</label>
+          </div>
+        </li>
+        <li>
+          <div class="lead_img"><img title="太阳花赤霞珠红2012" src="../img/img-Shan/1502762670750853.jpg"></div>
+            <div class="lead_txt">
+              <span>口感丰满 屡获高分</span>
+              <p>太阳花赤霞珠红2012</p>
+              <label><em>闪购价：</em>￥1199.00</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 今日闪购内容结束 -->
+    <!-- 推荐美酒开始 -->
+    <div class="fast_choose" id="cateId">
+      <a class="on">推荐美酒<span></span><em></em></a>
+    </div>
+    <div id="fast_chooseId">
+      
+    
+      <!-- 1 -->
+      <div class="stream_wrap">
+        <div id="833934262_stremtop_2" class="stream_top">
+          <div id="833934262_comp_2" class="comp"><img style="display:none;" src=""></div>
+            <div class="stream_left ">
+              <div class="row01" title="由阿兰•帝龙（Alain Thienot）创建而成"><em></em>由阿兰•帝龙（Alain Thienot）创建而成</div>
+              <div class="row02">
+                <p>【名庄】贝卡塔纳庄园正牌干红葡萄酒 2007</p>
+                <em>Chateau Boyd Cantenac</em>
+              </div>
+              <div class="row03">
+                <div class="isBy on">
+                  <p><span>￥</span>518</p>
+                  <a href="#" class="J_addToCart">加入购物车</a><em></em>
+                </div>
+              </div>
+                    
+            </div>
+            <div class="stream_right"><img src="../img/img-Shan/1469154253027477_M.jpg"></div>
+        </div>
+        <div class="stream_bottom">
+            <div class="side_l"></div>
+            <div class="side_r"></div>
+            <p></p>
+            <a class="addToFav collect_01">收藏</a>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="stream_wrap">
+        <div id="833934262_stremtop_2" class="stream_top ">
+          <div id="833934262_comp_2" class="comp"><img style="display:none;" src=""></div>
+            <div class="stream_left ">
+              <div class="row01" title="由阿兰•帝龙（Alain Thienot）创建而成"><em></em>由阿兰•帝龙（Alain Thienot）创建而成</div>
+              <div class="row02">
+                <p>【名庄】贝卡塔纳庄园正牌干红葡萄酒 2007</p>
+                <em>Chateau Boyd Cantenac</em>
+              </div>
+              <div class="row03">
+                <div class="isBy on">
+                  <p><span>￥</span>518</p>
+                  <a href="#" class="J_addToCart">加入购物车</a><em></em>
+                </div>
+              </div>
+                    
+            </div>
+            <div class="stream_right"><img src="../img/img-Shan/1469154253027477_M.jpg"></div>
+        </div>
+        <div class="stream_bottom">
+            <div class="side_l"></div>
+            <div class="side_r"></div>
+            <p></p>
+            <a class="addToFav collect_01">收藏</a>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="stream_wrap">
+        <div id="833934262_stremtop_2" class="stream_top">
+          <div id="833934262_comp_2" class="comp"><img style="display:none;" src=""></div>
+            <div class="stream_left ">
+              <div class="row01" title="由阿兰•帝龙（Alain Thienot）创建而成"><em></em>由阿兰•帝龙（Alain Thienot）创建而成</div>
+              <div class="row02">
+                <p>【名庄】贝卡塔纳庄园正牌干红葡萄酒 2007</p>
+                <em>Chateau Boyd Cantenac</em>
+              </div>
+              <div class="row03">
+                <div class="isBy on">
+                  <p><span>￥</span>518</p>
+                  <a href="#" class="J_addToCart">加入购物车</a><em></em>
+                </div>
+              </div>
+                    
+            </div>
+            <div class="stream_right"><img src="../img/img-Shan/1469154253027477_M.jpg"></div>
+        </div>
+        <div class="stream_bottom">
+            <div class="side_l"></div>
+            <div class="side_r"></div>
+            <p></p>
+            <a class="addToFav collect_01">收藏</a>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="stream_wrap">
+        <div id="833934262_stremtop_2" class="stream_top">
+          <div id="833934262_comp_2" class="comp"><img style="display:none;" src=""></div>
+            <div class="stream_left ">
+              <div class="row01" title="由阿兰•帝龙（Alain Thienot）创建而成"><em></em>由阿兰•帝龙（Alain Thienot）创建而成</div>
+              <div class="row02">
+                <p>【名庄】贝卡塔纳庄园正牌干红葡萄酒 2007</p>
+                <em>Chateau Boyd Cantenac</em>
+              </div>
+              <div class="row03">
+                <div class="isBy on">
+                  <p><span>￥</span>518</p>
+                  <a href="#" class="J_addToCart">加入购物车</a><em></em>
+                </div>
+              </div>
+                    
+            </div>
+            <div class="stream_right"><img src="../img/img-Shan/1469154253027477_M.jpg"></div>
+        </div>
+        <div class="stream_bottom">
+            <div class="side_l"></div>
+            <div class="side_r"></div>
+            <p></p>
+            <a class="addToFav collect_01">收藏</a>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="stream_wrap">
+        <div id="833934262_stremtop_2" class="stream_top">
+          <div id="833934262_comp_2" class="comp"><img style="display:none;" src=""></div>
+            <div class="stream_left ">
+              <div class="row01"></div>
+              <div class="row02">
+                <p>【名庄】狄甘庄园贵腐甜白葡萄酒2008</p>
+                <em>Chateau D'Yquem</em>
+              </div>
+              <div class="row03">
+                <div class="isBy on">
+                  <p><span>￥</span>1131</p>
+                  <a href="#" class="J_addToCart">加入购物车</a><em></em>
+                </div>
+              </div>
+                    
+            </div>
+            <div class="stream_right"><img src="../img/img-Shan/24098021114672047_M.jpg"></div>
+        </div>
+        <div class="stream_bottom">
+            <div class="side_l"></div>
+            <div class="side_r"></div>
+            <p></p>
+            <a class="addToFav collect_01">收藏</a>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="stream_wrap">
+        <div id="833934262_stremtop_2" class="stream_top">
+          <div id="833934262_comp_2" class="comp"><img style="display:none;" src=""></div>
+            <div class="stream_left ">
+              <div class="row01"></div>
+              <div class="row02">
+                <p>【名庄】狄甘庄园贵腐甜白葡萄酒2008</p>
+                <em>Chateau D'Yquem</em>
+              </div>
+              <div class="row03">
+                <div class="isBy on">
+                  <p><span>￥</span>1131</p>
+                  <a href="#" class="J_addToCart">加入购物车</a><em></em>
+                </div>
+              </div>
+                    
+            </div>
+            <div class="stream_right"><img src="../img/img-Shan/24098021114672047_M.jpg"></div>
+        </div>
+        <div class="stream_bottom">
+            <div class="side_l"></div>
+            <div class="side_r"></div>
+            <p></p>
+            <a class="addToFav collect_01">收藏</a>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="stream_wrap">
+        <div id="833934262_stremtop_2" class="stream_top">
+          <div id="833934262_comp_2" class="comp"><img style="display:none;" src=""></div>
+            <div class="stream_left ">
+              <div class="row01"></div>
+              <div class="row02">
+                <p>【名庄】狄甘庄园贵腐甜白葡萄酒2008</p>
+                <em>Chateau D'Yquem</em>
+              </div>
+              <div class="row03">
+                <div class="isBy on">
+                  <p><span>￥</span>1131</p>
+                  <a href="#" class="J_addToCart">加入购物车</a><em></em>
+                </div>
+              </div>
+                    
+            </div>
+            <div class="stream_right"><img src="../img/img-Shan/24098021114672047_M.jpg"></div>
+        </div>
+        <div class="stream_bottom">
+            <div class="side_l"></div>
+            <div class="side_r"></div>
+            <p></p>
+            <a class="addToFav collect_01">收藏</a>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="stream_wrap">
+        <div id="833934262_stremtop_2" class="stream_top">
+          <div id="833934262_comp_2" class="comp"><img style="display:none;" src=""></div>
+            <div class="stream_left ">
+              <div class="row01"></div>
+              <div class="row02">
+                <p>【名庄】狄甘庄园贵腐甜白葡萄酒2008</p>
+                <em>Chateau D'Yquem</em>
+              </div>
+              <div class="row03">
+                <div class="isBy on">
+                  <p><span>￥</span>1131</p>
+                  <a href="#" class="J_addToCart">加入购物车</a><em></em>
+                </div>
+              </div>
+                    
+            </div>
+            <div class="stream_right"><img src="../img/img-Shan/24098021114672047_M.jpg"></div>
+        </div>
+        <div class="stream_bottom">
+            <div class="side_l"></div>
+            <div class="side_r"></div>
+            <p></p>
+            <a class="addToFav collect_01">收藏</a>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- 推荐美酒结束 -->
+    <!-- 精彩频道开始 -->
+    <div class="fast_title">
+        <div class="item01"></div>
+        <div class="item02">精彩频道</div>
+    </div>
+    <div style="width:1200px;overflow:hidden;margin:0 auto;padding:15px 0;">
+      <div style="float:left;display:inline;width:394px;height:270px;margin-right: 5px">            
+        <div id="advertId172">
+        <img src="../img/img-Shan/1502248409355941.png" width="394px" height="270px">
+        </div>
+      </div>
+      <div style="float:left;display:inline;width:394px;height:270px;margin-right: 5px">            
+        <div id="advertId172">
+        <img src="../img/img-Shan/1502871142025945.png" width="394px" height="270px">
+        </div>
+      </div>
+      <div style="float:left;display:inline;width:394px;height:270px;">            
+        <div id="advertId172">
+        <img src="../img/img-Shan/1489568889008821.png" width="394px" height="270px">
+        </div>
+      </div>
+    </div>
+    <!-- 精彩频道结束 -->
+  <!-- footer开始 -->
+  <div id="footer">
+      <div id="footer-slogen">
+          <dl>
+              <dt class="s1"></dt>
+              <dd><b>甄选全球葡萄酒</b></dd>
+          </dl>
+          <dl>
+              <dt class="s2"></dt>
+              <dd><b>社区智能化终端触达</b></dd>
+          </dl>
+          <dl>
+              <dt class="s3"></dt>
+              <dd><b>原产地高品质享受</b></dd>
+          </dl>
+          <dl>
+              <dt class="s4"></dt>
+              <dd><b>新葡萄酒品位生活</b></dd>
+          </dl>
+      </div>
+      <div id="footer-service">
+          <dl>
+              <dt>关于我们</dt>
+              <dd><a href="#">公司简介</a></dd>
+              <dd><a href="#">网酒基地</a></dd>
+              <dd><a href="#">媒体报道</a></dd>
+          </dl>
+          <dl>
+              <dt>新手指南</dt>
+              <dd><a href="#">新用户注册</a></dd>
+              <dd><a href="#">购物流程</a></dd>
+          </dl>
+          <dl>
+              <dt>会员相关</dt>
+              <dd><a href="#">会员等级</a></dd>
+              <dd><a href="#">积分政策</a></dd>
+              <dd><a href="#">会员权益</a></dd>
+          </dl>
+          <dl>
+              <dt>配送服务</dt>
+              <dd><a href="#">配送范围及时限</a></dd>
+              <dd><a href="#">配送运费(满99元免邮)</a></dd>
+              <dd><a href="#">运输包装说明</a></dd>
+              <dd><a href="#">发票制度</a></dd>
+          </dl>
+          <dl>
+              <dt>支付方式</dt>
+              <dd><a href="#">货到付款</a></dd>
+              <dd><a href="#">在线支付</a></dd>
+              <dd><a href="#">优惠券</a></dd>
+              <dd><a href="#">礼品卡/购物卡</a></dd>
+              <dd><a href="#">账户余额</a></dd>
+          </dl>
+          <dl>
+              <dt>售后服务</dt>
+              <dd><a href="#">退换货流程</a></dd>
+              <dd><a href="#">退款说明</a></dd>
+              <dd><a href="#">正品保障</a></dd>
+              <dd><a href="#">投诉建议</a></dd>
+          </dl>
+          <dl>
+              <dt>商家合作</dt>
+              <dd><a href="#">商家入驻</a></dd>
+              <dd><a href="#">平台规则</a></dd>
+              <dd><a href="#">招商方向</a></dd>
+          </dl>
+          <dl style="width:180px;">
+              <div class="slogen-app">
+                  <img src="../img/weibo.png">微博
+              </div>
+              <div class="slogen-app">
+                  <img src="../img/weixin.png">微信
+              </div>
+          </dl>
+          
+      </div>
+      <div id="footer-tips">
+          <div class="mn">
+              <div class="mn_left">
+                   <a href="#">友情链接</a> | 
+                   <a href="#">联系我们</a> | 
+                   <a href="#">隐私声明</a> | 
+                   <a href="#">媒体报道</a> | 
+                   <a href="#">消费者保护</a> | 
+                   <a href="#">真伪鉴别</a><br>
+                   食品流通许可证：SP1101081110120639         营业执照：9111010858442448XQ         公司地址：北京市海淀区学院南路68号20号楼1层126室 <br>
+                   北京网酒网电子商务股份有限公司 · 京ICP备16030607号-1         本网站中消费指南、售后服务、用户反馈及法定公示等内容并非广告 
+              </div>
+              <div class="mn_right">
+                  全国售后服务热线 : 4000-519-519<br>
+                  周一至周日：10：00-19：00
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- footer结束 -->
+                      
+
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="../js/index-2-XianShiShanGou.js" ></script>
+

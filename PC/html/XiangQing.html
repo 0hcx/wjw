@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情</title>
+    <link rel="icon" href="http://img0.wangjiu.com/wj.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/XiangQing.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+<body>
+  	<!-- header-tips 开始-->
+  	<div id="header-tips">
+        <ul class="mn">
+            <li class="menu">
+                <em>更多频道</em><i></i>
+                <ul>
+                    <li><a target="_blank" href="#">集团内购</a></li>
+                    <li><a target="_blank" href="#">名庄知识</a></li>
+                    <li><a target="_blank" href="#">酒迷社区</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <em>乐视生态</em><i></i>
+                <ul>
+                    <li><a target="_blank" href="#">乐视网</a></li>
+                    <li><a target="_blank" href="#">乐视商城</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank">提货卡</a></li>
+            <li class="menu">
+              <em><a href="#">会员俱乐部</a></em><i></i>
+                <ul>
+                    <li><a href="#" target="_blank">酒迷社区</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu">
+                <em><a href="javascript:void(0)" onclick="goUserCenter()">我的网酒</a></em><i></i>
+                <ul>
+                  <li><a href="javascript:void(0)" onclick="goOrderlist()">我的订单</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCoupon()">我的优惠券</a></li>
+                  <li><a href="javascript:void(0)" onclick="goPoint()">我的积分</a></li>
+                  <li><a href="javascript:void(0)" onclick="goCollection()">我的收藏</a></li>                  
+                </ul>
+            </li>
+            <li id="loginMess" class="app" style="margin-right:15px;"><span>hi~欢迎来到网酒网</span><a href="javascript:;" id="qregister">快速注册</a>  <a id="login" href="javascript:;">登录</a></li> 
+            <li class="app">
+                <a target="_blank" href="#">手机网酒网</a>
+            </li>
+        </ul>
+    </div>
+    <!-- header-tips 结束-->
+    <!-- header-mn-z 开始 -->
+    <div id="header-mn-z">
+      <div id="header-mn">
+        <a href="index.html"><div class="logo"></div></a>
+        <div id="hd-car" class="topCart" style="">
+          <a href="cart.html" target="_blank">
+          <div class="car-hd">
+            <div class="car-tw" style="">我的购物车</div>
+            <div class="car-numb J_cartSumCount">0</div>
+            <i></i>
+          </div>
+        </a>
+        <!-- <div id="J_cartMN" class="car-mn">
+          <div class="tlt"><i id="J_topCartTitle" style="display:none;">最新加入的商品</i></div>
+          <ul class="mn">           
+              <div id="J_topCartContent"></div>            
+          </ul>
+          <div id="J_topGoCart" class="set" style="display:none;">
+            <div class="txt">已选<span class="J_topCartCheckNum">0</span>件商品，共计<span class="J_rightCartPrice">￥0.00</span>
+            </div>
+            <a class="btn" id="topCart_tuiguang" href="http://www.wangjiu.com/cart.html" target="_blank">去购物车结算</a>
+          </div>
+        </div> -->
+      </div>  
+
+
+      <div id="hd-search">
+        <div class="mn searchClass">
+          <input id="searchContent" type="text" value="赏轩辕剑，品火玫瑰，6支低至299元 >>" class="search-text" style="color:#999;">
+          <a id="searchId" href="javascript:;" class="search-btn"></a>
+          <div class="search-tips">
+            <a href="#">葡萄酒</a>
+            <a href="#">/白酒</a>
+            <a href="#">/起泡酒</a>
+            <a href="#">/轩尼诗</a>
+            <a href="#">/买酒送手机</a>
+            <a href="#">/名庄</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header-mn-z 结束 -->
+  
+    <div id="header-menu-z">
+        <ul id="header-menu">
+            <li class="menuid-z" id="menuid">
+                <a id="shoppingMall" href="list.html" target="_blank">全部商品</a>
+                <div id="menuNav" class="menuNav" style=""></div>
+                <div class="menu_left" id="menu_leftId">                  
+                    <div class="list" data-index="0">
+                        <h2 class="iterm01"><a href="#" target="_blank">一键选购</a></h2>
+                    </div>
+                    <div class="list" data-index="1">
+                        <h2 class="iterm02"><a href="#" target="_blank">葡萄酒</a></h2>
+                    </div>
+                    <div class="list" data-index="2">
+                        <h2 class="iterm03"><a href="#" target="_blank">白酒</a></h2>
+                    </div>
+                    <div class="list" data-index="3">
+                        <h2 class="iterm04"><a href="#" target="_blank">烈酒</a></h2>
+                    </div>
+                    <div class="list" data-index="4">
+                        <h2 class="iterm05"><a href="#" target="_blank">啤酒</a></h2>
+                    </div>
+                    <div class="list" data-index="5">
+                        <h2 class="iterm06"><a href="#" target="_blank">酒具周边</a></h2>
+                    </div> 
+                    <div class="list" data-index="6">
+                        <h2 class="iterm07"><a href="#" target="_blank">生态世界</a></h2>
+                    </div>   
+                </div>
+                <div id="ErJiCaiDan" style="display: none;">
+                    <!-- <div gsregion="3" gssnapshot="0" class="menu_cn"> -->
+                    <div gsregion="3" gssnapshot="0" class="menu_cn" >
+
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/28401068676029874.png" width="280px" height="350px"/>
+                                </a>
+                            </div>
+                        </div>
+                                  
+                        <div class="cn_list">
+                          <b>一键选购</b>
+                            <a href="#">法国</a>
+                            <a href="#">智利</a>
+                            <a href="#">波尔多</a>
+                            <a href="#">托斯卡纳</a><br>
+                            <a href="#">1855列级庄</a>
+                            <a href="#">中级庄</a>
+                            <a href="#" style="color:red">整箱购</a><br>
+                            <a href="#" style="color:red">奔富</a>
+                            <a href="#">干露</a>
+                            <a href="#" style="color:red">拉菲</a>
+                            <a href="#" >卡门萨</a>
+                            <a href="#">红魔鬼</a>
+                            <a href="#">泽巴赫</a><br>
+                            <a href="#">甜白</a>
+                            <a href="#">起泡/香槟</a><br>
+                            <a href="#">芝华士</a>
+                            <a href="#">轩尼诗</a>
+                            <a href="#">威士忌</a>
+                            <a href="#">白兰地</a><br>
+                            <a href="#">格鲁特</a>
+                            <a href="#">德国啤酒</a>
+                            <a href="#">比利时啤酒</a><br>
+                            <a href="#">酒杯</a>
+                            <a href="#">酒柜</a>
+                            <a href="#" style="color:red">白酒</a>
+                            <a href="#" style="color:red">茅台</a>
+                            <a href="#" style="color:red">五粮液</a>
+                            <a href="#" style="color:red">洋河</a>
+                            <a href="#" style="color:red">剑南春</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>价格区间</b>
+                            <a href="#">200元以下</a>
+                            <a href="#">200~299</a>
+                            <a href="#">300~499</a>
+                            <a href="#">500~799</a><br/>
+                            <a href="#">800~999</a>
+                            <a href="#">1000~1999</a>
+                            <a href="#">2000以上</a>
+                        </div>
+                      
+                    </div>
+
+
+                    <div gsregion="3" gssnapshot="1" class="menu_cn">
+                        <div class="l">
+                            <div class="cn_list">
+                              <b>葡萄酒类型</b>
+                                <a href="#">红葡萄酒</a>
+                                <a href="#">白葡萄酒</a>
+                                <a href="#">桃红葡萄酒</a>
+                                <a href="#">起泡葡萄酒</a>
+                                <a href="#">加强葡萄酒</a>
+                                <a href="#">甜型葡萄酒</a>
+                            </div>
+                            <div class="cn_list">
+                                <b>品牌</b>
+                                <a href="#">奔富酒园</a>
+                                <a href="#">卡沃利</a>
+                                <a href="#">坎托雷</a>
+                                <a href="#">V骑士</a>
+                                <a href="#">泽巴赫酒庄</a>
+                                <a href="#">火玫瑰</a>
+                                <a href="#">石柱</a>
+                                <a href="#">鬼脸</a>
+                                <a href="#">卡乐丝</a>
+                            </div>
+                            <div class="cn_list">
+                                <b>等级</b>
+                                <a href="#">1855梅多克列级庄园</a>
+                                <a href="#">圣爱美侬列级庄园</a>
+                                <a href="#">苏玳巴萨克列级庄园</a>
+                                <a href="#">格拉夫列级庄园</a>
+                                <a href="#"> 勃艮第AOC</a>
+                                <a href="#">波美侯AOC</a>    
+                            </div>
+                                <div class="cn_list">
+                                <b>国家</b>
+                                    <a href="#">法国</a>
+                                    <a href="#">澳大利亚</a>
+                                    <a href="#">意大利</a>
+                                    <a href="#">德国</a>
+                                    <a href="#">西班牙</a>
+                                    <a href="#">美国</a>
+                                    <a href="#">智利</a>
+                                    <a href="#">阿根廷</a>
+                                    <a href="#">加拿大</a>
+                                    <a href="#">南非</a>
+                                    <a href="#">奥地利</a>
+                                    <a href="#">葡萄牙</a>
+                                    <a href="#">新西兰</a>
+                                    <a href="#">匈牙利</a>
+                                    <a href="#">中国</a>
+                                </div>
+                            </div>
+                        <div class="l">
+                            <div class="cn_list">
+                                <b>产区</b>
+                                <a href="#">波尔多</a>
+                                <a href="#">勃艮第</a>
+                                <a href="#">香槟</a>
+                                <a href="#">罗讷河谷</a>
+                                <a href="#">皮埃蒙特</a>
+                                <a href="#">托斯卡纳</a>
+                                <a href="#">威尼托</a>
+                                <a href="#">莫舍尔</a>
+                                <a href="#">莱茵黑森</a>
+                                <a href="#">南澳</a>
+                            </div>
+                         
+                            <div class="cn_list">
+                                <b>葡萄品种</b>
+                                <a href="#">赤霞珠</a>
+                                <a href="#">美乐</a>
+                                <a href="#">西拉</a>
+                                <a href="#">佳美娜</a>
+                                <a href="#"> 桑娇维塞</a>
+                                <a href="#">霞多丽</a>
+                                <a href="#">仙粉黛</a>
+                                <a href="#">长相思</a>
+                                <a href="#">雷司令</a>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div gsregion="3" gssnapshot="2" class="menu_cn"><!-- 白酒 -->
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/1472034619916397.png" width="280px" height="350px"/>
+                                </a>
+                           </div>            
+                        </div>
+                        <div class="cn_list">
+                            <b>品牌</b>
+                            <a href="#">茅台</a>
+                            <a href="#">五粮液</a>
+                            <a href="#">洋河</a>
+                            <a href="#">剑南春</a>
+                            <a href="#">汾酒</a>
+                            <a href="#">古井贡</a>
+                            <a href="#">红星</a>
+                            <a href="#">泸州老窖</a>
+                            <a href="#">郎酒</a>
+                            <a href="#">牛栏山</a>
+                            <a href="#">水井坊</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>香型</b>
+                            <a href="#">酱香</a>
+                            <a href="#">浓香</a>
+                            <a href="#">清香</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>产地</b>
+                            <a href="#">安徽</a>
+                            <a href="#">北京</a>
+                            <a href="#">贵州</a>
+                            <a href="#">江苏</a>
+                            <a href="#">山西</a>
+                            <a href="#">四川</a>
+                            <a href="#">其他</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>价位</b>
+                            <a href="#">1~99元</a>
+                            <a href="#">100~299元</a>
+                            <a href="#">300~599元</a>
+                            <a href="#">600~999元</a>
+                            <a href="#">1000元以上</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div gsregion="3" gssnapshot="3" class="menu_cn">
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/7401957692933198.png" width="280px" height="350px"/>
+                                </a>
+                           </div>            
+                        </div>
+                        <div class="cn_list">
+                            <b>种类</b>
+                            <a href="#">威士忌</a>
+                            <a href="#">白兰地</a>
+                            <a href="#">伏特加</a>
+                            <a href="#">预调酒</a>
+                            <a href="#">朗姆酒</a>
+                            <a href="#">龙舌兰</a>
+                            <a href="#">力娇酒/利口酒</a>
+                            <a href="#">金酒</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>品牌</b>
+                            <a href="#">芝华士</a>
+                            <a href="#">尊尼获加</a>
+                            <a href="#">杰克丹尼</a>
+                            <a href="#">百龄坛</a>
+                            <a href="#">格兰菲迪</a>
+                            <a href="#">麦卡伦</a>
+                            <a href="#">轩尼诗</a>
+                            <a href="#">摩根船长</a>
+                            <a href="#">哈瓦纳俱乐部</a>
+                            <a href="#">人头马</a>
+                            <a href="#">绝对伏特加</a>
+                            <a href="#">斯米诺</a>
+                            <a href="#">苏连红</a>
+                            <a href="#">百加得</a>
+                            <a href="#">奥美加</a>
+                            <a href="#">豪帅</a>
+                            <a href="#">雷博士</a>
+                            <a href="#">百利</a>
+                            <a href="#">甘露</a>
+                            <a href="#">君度</a>
+                            <a href="#">哥顿</a>
+                            <a href="#">必富达</a>
+                            <a href="#">施格兰</a>
+                            <a href="#">马天尼</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div gsregion="3" gssnapshot="4" class="menu_cn" >
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/28401105387457241.png" width="280px" height="350px"/>
+                                </a>
+                           </div>      
+                        </div>
+                        <div class="l">
+                            <div class="cn_list">
+                                <b>国家</b>
+                                <a href="#">德国</a>
+                                <a href="#">比利时</a>
+                                <a href="#">丹麦</a>
+                            </div>
+                            <div class="cn_list">
+                                <b>种类</b>
+                                <a href="#">黄啤酒</a>
+                                <a href="#">白啤酒</a>
+                                <a href="#">黑啤酒</a>
+                            </div>
+                            <div class="cn_list">
+                                <b>品牌</b>
+                                <a href="#">智美</a>
+                                <a href="#">粉象</a>
+                                <a href="#">林德曼</a>
+                                <a href="#">罗斯福</a>
+                                <a href="#">格鲁特</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div gsregion="3" gssnapshot="5" class="menu_cn">
+                        <div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/28401135434441359.png" width="280px" height="350px"/>
+                                </a>
+                           </div>      
+                        </div>
+                        <div class="cn_list">
+                            <b>种类</b>
+                            <a href="#">酒杯</a>
+                            <a href="#">醒酒器</a>
+                            <a href="#">酒刀</a>
+                            <a href="#">酒塞</a>
+                            <a href="#">酒柜</a>
+                            <a href="#">酒袋</a>
+                            <a href="#">酒壶</a>
+                            <a href="#">皮盒</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>品牌</b>
+                            <a href="#">石岛</a>
+                            <a href="#">巴卡拉</a>
+                            <a href="#">拉吉奥</a>
+                            <a href="#">富信</a>
+                            <a href="#">新潮</a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div gsregion="3" gssnapshot="6" class="menu_cn">
+						<div class="cn_list cn_imgs" style="float: right;">
+                            <div id="advertId323">
+                                <a id="adImg" target="_blank" style="display:block;" class="gsexp">
+                                    <img src="../img/28401125511890575.png" width="280px" height="350px"/>
+                                </a>
+                           </div>      
+                        </div>
+                        <div class="cn_list">
+                            <b>配件</b>
+                            <a href="#">耳机</a>
+                            <a href="#">移动电源</a>
+                            <a href="#">游戏手柄</a>
+                            <a href="#">遥控器</a>
+                            <a href="#">乐视Letv高清线</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>衍生品</b>
+                            <a href="#">公仔</a>
+                            <a href="#">自拍杆</a>
+                        </div>
+                        <div class="cn_list">
+                            <b>体育周边</b>
+                            <a href="#">棒球帽</a>
+                            <a href="#">定制背包</a>
+                            <a href="#">马克杯</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </li>
+
+
+
+
+
+            <li><a class="gsexp " href="index.html">首页</a></li>
+            <li><a class="gsexp " target="_blank" href="index-1-MingZhuangZhenXuan.html">名庄臻选</a></li>
+            <li><a class="gsexp " target="_blank" href="index-2-XianShiShanGou.html">限时闪购</a></li>
+            <li><a class="gsexp " target="_blank" href="index-3-ZhengXiangGou.html">整箱购</a><img style="position:absolute;right:13px;top:-6px;" src="../img/icon-new.gif"></li>
+            <li><a class="gsexp " target="_blank" href="index-4-LeShiMeiJiu.html">乐视美酒</a></li>       
+            <li><a class="gsexp " target="_blank" href="index-5-RVFPingFen.html">RVF评分</a></li>     
+        </ul>
+    </div>
+    
+    
+    
+    
+    <!--头部开始-->
+    <div class="detail_wap">
+    	<!--头部条开始-->
+		<div class="shop_list_menu">
+	      	<div class="lico01">
+	      		<a target="_blank" href="index.html">首页</a><em>&gt;</em>	
+	      	</div>
+			<div class="lico01">
+				<a href="#">酒</a><em>&gt;</em>
+			</div>
+	      	<div class="lico01">
+	      		<a href="#">葡萄酒</a><em>&gt;</em>
+	      	</div>
+	      	<div class="lico01">
+	      		<a href="javascript:;">【名庄】克里奈教堂酒庄干红葡萄酒2009</a>
+	      	</div>
+		</div>
+		<!--头部条结束-->
+    	<!--头部内容开始-->
+		<div class="detail_mail clear">
+			<!--左侧开始-->
+			<div class="detail_picture">
+		      	<div id="flashIco" class="img_shan"></div>
+				<!-- 左大图开始 -->
+		    	<div class="large_pic">
+		            <!--<a class="zoomOut" href="../img/img-Xiang/24449298133478439_L.jpg" title="" style="outline-style: none; text-decoration: none;" rel="target">-->
+		                <div class="zoomPad">
+		                	<div id="box">
+								<div id="jingzi"></div>
+								<div id="showBox">
+									<div id="ImgBox">
+										
+									</div>
+								</div>
+							</div>
+		                </div>
+		           
+		            <!--</a>-->
+		        </div>
+		        <!-- 左大图结束 -->
+		        <!-- 左小图开始 -->
+		        <div class="samll_pic">
+		            <ul id="scrollImg01" class="photo-small-nav">
+		              	<div id="pp" class="photo-small-label clear" style=" width: 748px;">
+		                  	<li class="photo-small-array on">
+		                        <img src="../img/img-Xiang/24449298133478439_S.jpg">
+		                  	</li>
+	                     	<li class="photo-small-array">
+	                            <img src="../img/img-Xiang/10704379725502878_S.jpg">
+	                        </li>
+                            <li class="photo-small-array">
+                                <img src="../img/img-Xiang/10704379710022163_S.jpg">
+                            </li>
+                            <li class="photo-small-array">
+                                <img src="../img/img-Xiang/10704382137574814_S.jpg">
+                            </li>
+		                    <li class="photo-small-array">
+                                <img src="../img/img-Xiang/10704382404209180_S.jpg">
+                            </li>
+		                    <li class="photo-small-array">
+                                <img src="../img/img-Xiang/10704384673847949_S.jpg">
+                            </li>
+                            <li class="photo-small-array">
+                                <img src="../img/img-Xiang/10704385363639122_S.jpg">
+                            </li>
+		                    <li class="photo-small-array">
+                                <img src="../img/img-Xiang/10704390786473612_S.jpg">
+                            </li>
+                            <li class="photo-small-array">
+                                <img src="../img/img-Xiang/10704390895825803_S.jpg">
+                            </li>
+		              	</div>
+		            </ul>
+		
+		        	<div class="pic_i left-ico" id="left-ico" type="1"><div class="left_p m_c"></div></div>
+		    	    <div class="pic_i right-ico" id="right-ico" type="2"><div class="right_p"></div></div>
+		        </div>
+				<!-- 左小图结束 -->
+				<!--分享收藏开始-->
+		        <div class="share">
+		        	<p><a href="#" id="addToFav"><span id="isFavorite" class="get_ico"></span>收藏</a></p>
+		            <p><a href="#" id="shareId"><span class="sh_ico"></span>分享</a></p>
+		    	</div>
+		    	<!--分享收藏结束-->
+		    </div>
+		    <!--左侧结束-->
+		    <!-- 右侧开始 -->
+		    <div class="detail_text new">
+		    	<div class="part_line01">
+		        	<h1 id="p_name">【名庄】克里奈教堂酒庄干红葡萄酒2009</h1>
+		            <h2>Chateau l'Eglise Clinet 2009</h2>
+		        </div>
+		        <div class="part_line02"><h3>此酒丰满紧实，是一款深邃的佳酿，获得罗伯特-帕克99分推荐。 </h3></div>
+		        <div class="part_line04">
+		        	<div class="spare01">网酒价：</div>
+		    		<div class="spare02"><span><label>￥</label>5780.00</span></div>
+		    		<div class="spare04"><a href="#more08"><span id="commId">13</span>条评论</a></div>
+		    	</div>
+				<div class="part_line05 clear" id="promotion_div">
+                    <div class="t_left">促销：</div>
+					<div class="t_right">
+                        <p><em class="ion" style="background: #ca0814;">满减</em>&nbsp;&nbsp;&nbsp;活动商品满299元减25; 满599元减70; 满1099元减150...</p>
+					</div>
+				</div>
+				<!-- 省市联动开始 -->
+		        <div id="jaddress" class="part_line05 clear">
+		            <div class="t_left">送货至：</div>
+		            <div class="t_right whole">
+			            <div href="javascript:;" class="item_BTN">
+				            <div class="tes">
+				            	<span style="cursor: pointer;">北京市 北京市 东城区</span><p></p>
+				            </div>
+				            <div class="addHOT" style="display: none;">
+				                <div class="label_title">
+					                <div class="label_roof label_BG"></div>
+					                <div class="label_roof label_t">
+						                <a href="#" class="shut"></a>
+						                <a href="#" class="lo"><span id="province" area_id="1">北京市</span><em></em></a>
+						                <a href="#"><span id="city" area_id="35">北京市</span><em></em></a>
+						                <a href="#"><span id="district" area_id="380">东城区</span><em></em></a>
+					                </div>
+				                </div>
+				                <ul id="jAreaProvince">
+				                </ul>
+				                <ul style="display: none;" id="jAreaCity">
+				                </ul>
+				                <ul style="display: none;" id="jAreaDistrict">
+				                </ul>
+				            </div>
+			            </div>
+			        	<div id="nowhere" class="nowhere">有货</div>
+		        	</div>
+		        </div>
+				<!-- 省市联动结束 -->
+		       	<div class="part_line05 clear">
+					<em class="describe" style="font-style: normal;">由网酒网发货，并提供售后服务</em>      
+		        </div>
+		               
+		       	<div class="part_line05 bor clear" id="stages" style="">
+		            <div class="t_left">支持分期购：</div>
+		            <div class="t_right">
+		                
+		            	<div class="pay_type">乐乐花分期
+		            		<a>什么是乐乐花分期</a>
+		            	</div>
+		            	<a class="item_BTN bar">约￥1968.86*3<em class="iton"></em></a>
+		            	<a class="item_BTN ">约￥1005.53*6<em class="iton"></em></a>
+		            	<!--<a class="item_BTN ">约￥519.24*12<em class="iton"></em></a>-->
+		            </div>
+		     	</div>
+		        <div class="part_line06">
+		            <p id="productMsg"></p>
+		            <div class="roof">                	
+		                <div class="block_left">
+		                    <input id="productNum" type="text">
+		                    <div class="contain">
+		                      <a id="productAdd" class="block_BTN ">+</a>
+		                      <a id="productCut" class="block_BTN sl">-</a>
+		                    </div>
+		                </div>
+		              	<!-- <div id="showBuyButtom" class="block_pattern">
+		                    <a href="#" id="toCartButton">加入购物车</a>
+		                   	<a style="" id="quickButton" class="pay_BTN">分期购</a> 
+		                </div> -->
+                        <div id="showBuyButtom" class="block_pattern">
+                            <a href="#" id="toCartButton" class="put_BTN J_addToCart" >加入购物车</a>
+                           <a id="quickButton" href="#" class="pay_BTN" style="color: white;background: #0099FF;">分期购</a> 
+                        </div>
+		            	<div class="clear"></div>
+		            </div>   
+		      	</div>
+		      	<div class="part_line07">
+		        	<div class="t_left">保障：</div>
+		            <div class="t_right">
+		                <p class="p01">品牌授权</p>
+		                <p class="p02">保真"基金"</p>
+		                <p class="p03">售后无忧</p>
+		            </div>
+		        </div>
+		    </div>
+			<!-- 右侧结束 -->
+		</div>
+		<!--头部内容结束-->
+	</div>
+	<!--头部结束-->
+
+	<!--正文开始-->
+	<div class="contain_wapper pd_d">
+		<!--左侧开始-->
+    	<div class="contain_left">
+            <!--买过开始-->
+	      	<div class="sd-mn-iteam">
+	        	<ul class="sd-tlt">
+	            	<li>买过此商品的顾客还买过</li>
+	        	</ul>
+	        	<!--1-->
+	        	<ul class="sd-product" id="recommProId">
+	        		<li>
+	        			<img src="../img/img-Xiang/1483084673735826_M7.jpg" alt="十字波旁红葡萄酒*2"/>
+	        			<div class="txt">
+	        				<h4>十字波旁红葡萄酒*2</h4>
+	        				<span>￥99.00</span>
+	        			</div>
+	        		</li>
+	        		<li>
+	        			<img src="../img/img-Xiang/1481099131418698_M7.jpg" alt="十字波旁红葡萄酒*2"/>
+	        			<div class="txt">
+	        				<h4>十字波旁红葡萄酒*2</h4>
+	        				<span>￥99.00</span>
+	        			</div>
+	        		</li>
+	        		<li>
+	        			<img src="../img/img-Xiang/30492470258081280_M7.jpg" alt="十字波旁红葡萄酒*2"/>
+	        			<div class="txt">
+	        				<h4>十字波旁红葡萄酒*2</h4>
+	        				<span>￥99.00</span>
+	        			</div>
+	        		</li>
+	        		<li>
+	        			<img src="../img/img-Xiang/1491355773094033_M7.jpg" alt="十字波旁红葡萄酒*2"/>
+	        			<div class="txt">
+	        				<h4>十字波旁红葡萄酒*2</h4>
+	        				<span>￥99.00</span>
+	        			</div>
+	        		</li>
+	        		<li>
+	        			<img src="../img/img-Xiang/28416809062748222_M7.jpg" alt="十字波旁红葡萄酒*2"/>
+	        			<div class="txt">
+	        				<h4>十字波旁红葡萄酒*2</h4>
+	        				<span>￥99.00</span>
+	        			</div>
+	        		</li>
+	        	</ul>
+	        </div>
+	        <!--买过结束-->
+	        <!--看过开始-->
+	      	<div class="sd-mn-iteam">
+	        	<ul class="sd-tlt">
+	            	<li>看过此商品的顾客还看过</li>
+	        	</ul>
+	        	<!--1-->
+	        	<ul class="sd-product" id="recommProId">
+	        		<li>
+	        			<img src="../img/img-Xiang/25317909201036535_M7.jpg" alt="【名庄】教皇酒庄正牌干红葡萄酒 2013"/>
+	        			<div class="txt">
+	        				<h4>【名庄】教皇酒庄正牌干红葡萄酒 2013</h4>
+	        				<span>￥799.00</span>
+	        			</div>
+	        		</li>
+	        		<li>
+	        			<img src="../img/img-Xiang/27121220315382820_M7.jpg" alt="【名庄】拉菲酒庄正牌干红葡萄酒 2011"/>
+	        			<div class="txt">
+	        				<h4>【名庄】拉菲酒庄正牌干红葡萄酒 2011</h4>
+	        				<span>￥5388.00</span>
+	        			</div>
+	        		</li>
+	        		<li>
+	        			<img src="../img/img-Xiang/29986356998778371_M7.jpg" alt="*石柱珍藏西拉干红葡萄酒2013"/>
+	        			<div class="txt">
+	        				<h4>*石柱珍藏西拉干红葡萄酒2013</h4>
+	        				<span>￥168.00</span>
+	        			</div>
+	        		</li>
+	        		<li>
+	        			<img src="../img/img-Xiang/27191655130326172_M7.jpg" alt="【名庄】拉菲酒庄正牌干红葡萄酒 2011"/>
+	        			<div class="txt">
+	        				<h4>【名庄】拉菲酒庄正牌干红葡萄酒 2011</h4>
+	        				<span>￥5388.00</span>
+	        			</div>
+	        		</li>
+	        		<li>
+	        			<img src="../img/img-Xiang/1487153127000613_M7.jpg" alt="亚诺红葡萄酒"/>
+	        			<div class="txt">
+	        				<h4>亚诺红葡萄酒</h4>
+	        				<span>￥69.00</span>
+	        			</div>
+	        		</li>
+	        	</ul>
+	        </div>
+	        <!--看过结束-->
+	        <!--相关分类开始-->
+	        <div class="sd-mn-iteam">
+	            <ul class="sd-tlt">
+	    		    <li>相关分类</li>
+		        </ul>
+	            <div class="sd-gory">
+	                <a href="#">葡萄酒</a>
+	                <a href="#">啤酒</a>
+	                <a href="#">白酒</a>
+	                <a href="#">烈酒/洋酒</a>
+	                <a href="#">米酒</a>
+	                <a href="#">保健酒</a>
+	                
+	            </div>
+	        </div>
+	        <!--相关分类结束-->
+	    </div>
+	    <!--左侧结束-->
+	    
+	    
+	    <!--右侧开始-->
+	    <div class="contain_right">
+	    	<div class="contain_corner">
+	    		<ul id="tabs1" class="r_important r_important_01">
+                  	<li class="detailTab point"><a href="#detailTab1">商品详情</a></li>
+                  	<!--<li class="detailTab" tip="1">商品参数</li>-->
+                  	<li class="detailTab"><a href="#detailTab2">商品评价</a></li>
+                  	<li class="detailTab"><a href="#detailTab3">服务保障</a></li>
+                  	<!--<li style="display: none;" class="btn J_addToCart">加入购物车</li>
+                  	<li style="display: none;" class="prec" id="prec">￥5780</li>-->
+              	</ul>
+	    		<!--右侧上面固定开始-->
+	    		<ul id="tabs" class="r_important r_important_01" style="display: none;z-index: 2;">
+                  	<li class="detailTab point"><a href="#detailTab1">商品详情</a></li>
+                  	<!--<li class="detailTab" tip="1">商品参数</li>-->
+                  	<li class="detailTab"><a href="#detailTab2">商品评价</a></li>
+                  	<li class="detailTab"><a href="#detailTab3">服务保障</a></li>
+                  	<li class="btn J_addToCart">加入购物车</li>
+                  	<li class="prec" id="prec">￥5780</li>
+              	</ul>
+              	<!--右侧上面固定结束-->
+	    		<!--内容开始-->
+	    		<div class="wapper-info">
+	    			<!--商品详情开始-->
+	    			<div id="detailTab1" class="detailCont">
+			 			<ul class="made_in">
+			             	<li title="红葡萄酒" class="bk">
+			               		<em>葡萄酒类型 ：</em>红葡萄酒
+			             	</li>
+			             	<li title="品丽珠,美乐" class="bk">
+			               		<em>葡萄品种 ：</em>品丽珠,美乐
+			             	</li>
+			             	<li title="14.5%vol" class="bk">
+			               		<em>酒精度 ：</em>14.5%vol
+			             	</li>
+			             	<li title="2009" class="bk">
+			               		<em>生产年份 ：</em>2009
+			             	</li>
+			             	<li title="红葡萄酒" class="bk">
+			               		<em>葡萄酒类型 ：</em>红葡萄酒
+			             	</li>
+			             	<li title="品丽珠,美乐" class="bk">
+			               		<em>葡萄品种 ：</em>品丽珠,美乐
+			             	</li>
+			             	<li title="14.5%vol" class="bk">
+			               		<em>酒精度 ：</em>14.5%vol
+			             	</li>
+			             	<li title="2009" class="bk">
+			               		<em>生产年份 ：</em>2009
+			             	</li>
+			             	<li title="红葡萄酒" class="bk">
+			               		<em>葡萄酒类型 ：</em>红葡萄酒
+			             	</li>
+			             	<li title="品丽珠,美乐" class="bk">
+			               		<em>葡萄品种 ：</em>品丽珠,美乐
+			             	</li>
+			             	<li title="14.5%vol" class="bk">
+			               		<em>酒精度 ：</em>14.5%vol
+			             	</li>
+			             	<li title="2009" class="bk">
+			               		<em>生产年份 ：</em>2009
+			             	</li>
+			             	<li title="2020-2072">
+			               		<em>享用期 ：</em>2020-2072
+			             	</li>
+			             	<li title="烤牛肉、熏野兔肉、羔羊肉">
+			               		<em>搭配菜肴 ：</em>烤牛肉、熏野兔肉、羔... 
+			             	</li>
+			  			</ul>
+			  		</div>
+	    			<!--商品详情结束-->
+	    			<div class="inf-text-one">
+ 						<img alt="" src="../img/img-Xiang/11060432075451390.jpg" style="width: 950px; height: 56px;">
+	    			</div>
+	    			<div class="details-d">
+					  	<div class="details-d-img">
+					    	<img alt="" src="../img/img-Xiang/11060451287387438.jpg">
+					    </div>
+					
+					  	<div class="details-d-word">
+						   	<div class="details-d-tit">
+						     【名庄】克里奈教堂酒庄干红葡萄酒2009
+						    </div>
+						    <div class="details-d-tit01">
+						     Chateau l'Eglise Clinet 2009
+						    </div>
+						    <div class ="tit-dashed">
+						      ---------------------------------------------------------------
+						    </div>
+						    <div class="mark">
+						     <b>荣誉/评分：</b>RVF法国葡萄酒论：19/20分 罗伯特.帕克 Robert Parker：99分
+						    </div>
+						    <div class="mark">
+						     	<b>等级：</b>波美侯AOC Pomerol AOC
+						    </div>
+						    <div class="mark">
+						     	<b>特点介绍：</b>波美侯
+						    </div>
+						    <div class="mark">
+						     	<b>葡萄品种：</b>美乐（Merlot）、品丽珠（Cabernet Franc）
+						    </div>
+						    <div class="mark">
+						     	<b><strong>土壤气候</strong>：</b>绝妙的黑醋栗甜酒与樱桃利口酒的香气，混合甘草，松露与石墨香。纯净，优雅，但又充满力量与集中感，口感浓厚饱满，质感绝妙。
+						    </div>
+						    <div class="mark">
+						     	<b><strong>香气与口感</strong>：</b>绝妙的黑醋栗甜酒与樱桃利口酒的香气，混合甘草，松露与石墨香。纯净，优雅，但又充满力量与集中感，口感浓厚饱满，质感绝妙。
+						    </div>
+						   	<div class="mark">
+						     	<b><strong>醒酒方式/时间</strong>：</b>建议醒酒时间90分钟。
+						    </div>
+						    <div class="mark">
+						     	<b><strong>配餐建议</strong>：</b>烤牛肉、熏野兔肉、羔羊肉。
+						    </div>
+						    <div class="mark">
+						     	<b><strong>酿制方式</strong>：</b>手工采摘。经过精挑细选，进行温柔的破碎，之后将葡萄放入混凝土和不锈钢的容器中发酵15到21天。大约在十月份以后，开始放入新橡木桶中进行陈年，陈年时间为18个月。
+						     </div>
+						   	<div class="mark">
+						     	<b><strong>种植方式</strong>：</b>手工采摘。经过精挑细选，进行温柔的破碎，之后将葡萄放入混凝土和不锈钢的容器中发酵15到21天。大约在十月份以后，开始放入新橡木桶中进行陈年，陈年时间为18个月。
+						    </div>
+					  	</div>
+					</div>
+                    
+
+                    <img src="../img/img-Xiang/11060468960386972.jpg" style="width: 950px; height: 54px;">
+                    <img src="../img/img-Xiang/25926258806034088.jpg" style="width: 950px; margin-top: -4px;">
+                    <!-- 法国 -->
+                    <div class="inf-text-one">
+                        <!--<a name="more3" class="inf-text-one" id="more3"></a>-->                          
+                        <div class="sec-pre">
+                            <div class="sec-title"></div>
+                            <div class="l"><span>法国</span>France</div>
+                            <div class="sec_ico"></div>
+                        </div>
+                        <div class="sec-text">
+                            <img src="../img/img-Xiang/1038145883979319.jpg">
+                            <div class="text-03">
+                                &nbsp;&nbsp;&nbsp;&nbsp;法国全称法兰西共和国，国名源于中世纪前期的法兰克王国。自从法兰克王国分裂后，西部法兰克王国沿用其名称并演变为法兰西。“法兰西”（France）这一称呼较早出现于11世纪的《罗兰之歌》中。现为法兰西第五共和国。在汉字文化圈中，中国称其为法兰西，简称法国。法国是西欧面积很大的国家。领土呈对称的六边形，三边临海，三边靠陆。法国本土面积为543965平方公里，包括海外领土面积为632834平方公里。边境线总长度为5695公里，其中海岸线为2700公里，陆地线为2800公里，内河线为195公里。
+                            </div>
+                        </div>       
+                    </div>
+                    <div class="inf-text-one-clear"></div>
+                    <!-- 美乐 -->
+                    <div class="inf-text-one">
+                        <!--<a name="more4" class="inf-text-one" id="more4"></a>-->                          
+                        <div class="sec-pre">
+                            <div class="sec-title"></div>
+                            <div class="l"><span>美乐</span>Merlot</div>
+                            <div class="sec_ico"></div>
+                        </div>
+                        <div class="sec-text">
+                            <img src="../img/img-Xiang/51296368558054416.jpg">
+                            <div class="text-03">
+                                &nbsp;&nbsp;&nbsp;&nbsp;法国全称法兰西共和国，国名源于中世纪前期的法兰克王国。自从法兰克王国分裂后，西部法兰克王国沿用其名称并演变为法兰西。“法兰西”（France）这一称呼较早出现于11世纪的《罗兰之歌》中。现为法兰西第五共和国。在汉字文化圈中，中国称其为法兰西，简称法国。法国是西欧面积很大的国家。领土呈对称的六边形，三边临海，三边靠陆。法国本土面积为543965平方公里，包括海外领土面积为632834平方公里。边境线总长度为5695公里，其中海岸线为2700公里，陆地线为2800公里，内河线为195公里。
+                            </div>
+                        </div>       
+                    </div>
+                    <div class="inf-text-one-clear"></div>
+                    <!-- 品丽珠 -->
+                    <div class="inf-text-one">
+                        <!--<a name="more5" class="inf-text-one" id="more5"></a>-->                          
+                        <div class="sec-pre">
+                            <div class="sec-title"></div>
+                            <div class="l"><span>品丽珠</span>Cabernet</div>
+                            <div class="sec_ico"></div>
+                        </div>
+                        <div class="sec-text">
+                            <img src="../img/img-Xiang/51309630543329606.jpg">
+                            <div class="text-03">
+                                &nbsp;&nbsp;&nbsp;&nbsp;法国全称法兰西共和国，国名源于中世纪前期的法兰克王国。自从法兰克王国分裂后，西部法兰克王国沿用其名称并演变为法兰西。“法兰西”（France）这一称呼较早出现于11世纪的《罗兰之歌》中。现为法兰西第五共和国。在汉字文化圈中，中国称其为法兰西，简称法国。法国是西欧面积很大的国家。领土呈对称的六边形，三边临海，三边靠陆。法国本土面积为543965平方公里，包括海外领土面积为632834平方公里。边境线总长度为5695公里，其中海岸线为2700公里，陆地线为2800公里，内河线为195公里。
+                            </div>
+                        </div>       
+                    </div>
+                    <div class="inf-text-one-clear"></div>
+                    <!-- 开瓶介绍 -->
+                    <!--开瓶介绍 start-->
+                    <div class="inf-text-one">
+                        <div class="sec-pre">
+                            <div class="sec-title"></div>
+                            <div class="l"><span>开瓶介绍</span>Opening</div>
+                            <div class="sec_ico"></div>
+                        </div>
+                        <div class="sec-open">
+                            <div class="dsec-open_tt1"><b>正确使用海马刀的开瓶方法</b><span></span></div>
+                            <ul>
+                                <li>
+                                    <img src="../img/img-Xiang/51296884411123662.jpg" title="1.使用海马刀正确开启一款静止型葡萄酒"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296906294394425.jpg" title="2.将酒刀前段的刀片掰出握紧刀身"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296944916007319.jpg" title="3.沿着瓶口处下方横向均匀划一圈酒帽"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296960300039653.jpg" title="4.将酒刀立起对酒帽纵向划一刀"/>
+                                </li>
+                                
+                                <li>
+                                    <img src="../img/img-Xiang/51296884411123662.jpg" title="1.使用海马刀正确开启一款静止型葡萄酒"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296906294394425.jpg" title="2.将酒刀前段的刀片掰出握紧刀身"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296944916007319.jpg" title="3.沿着瓶口处下方横向均匀划一圈酒帽"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296960300039653.jpg" title="4.将酒刀立起对酒帽纵向划一刀"/>
+                                </li>
+                                
+                                <li>
+                                    <img src="../img/img-Xiang/51296884411123662.jpg" title="1.使用海马刀正确开启一款静止型葡萄酒"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296906294394425.jpg" title="2.将酒刀前段的刀片掰出握紧刀身"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296944916007319.jpg" title="3.沿着瓶口处下方横向均匀划一圈酒帽"/>
+                                </li>
+                                <li>
+                                    <img src="../img/img-Xiang/51296960300039653.jpg" title="4.将酒刀立起对酒帽纵向划一刀"/>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inf-text-one-clear"></div>
+                    <!--开瓶介绍 end--> 
+	    			<!--商品评价开始-->
+	    			<div id="detailTab2" class="detailCont">
+		                    <!-- <a name="more08" id="more08"></a> -->
+		                <div class="r_important"><em>商品评价</em>
+	                	</div>
+		                <div class="critic_er">
+		                    <div class="choice">
+		                        <!-- <div class="c_c"></div> -->
+		                        <div class="precent"><p>100%</p>好评率</div>
+		                        <div class="c_a">
+		                            <a level="-1" class="ron">全部 (13)</a>
+		                            <a level="-2">晒图 (0)</a>
+		                            <a level="0">好评 (13)</a>
+		                            <a level="1">中评 (0)</a>
+		                            <a level="2">差评 (0)</a>
+		                            <input style="" type="checkbox">&nbsp;&nbsp;只看精华评价
+		                        </div>
+		                    </div>
+		                    <div class="con_text">
+                                <!-- 1 -->
+		                        <div class="con_wap">
+		                            <div class="con_left">
+		                                <img src="../img/img-Xiang/head.jpg">
+		                                <label>J***N<br>见习骑士</label>
+		                            </div>
+		                            <div class="con_right">
+		                                <div class="m_c"></div>
+		                                <div class="mark clear">
+		                                    <p>评分:</p>
+		                                    <em><label></label></em>
+		                                    <span>2013-06-25 16:38:27</span>
+		  								</div>
+		                                <div class="arcord">有一款顶级葡萄酒，10年后会升值哒</div>
+		                            </div>
+		                        </div>
+                                <div class="inf-text-one-clear"></div>
+                                <!-- 2 -->
+                                <div class="con_wap">
+                                    <div class="con_left">
+                                        <img src="../img/img-Xiang/4535876451577.jpg">
+                                        <label>J***N<br>见习骑士</label>
+                                    </div>
+                                    <div class="con_right">
+                                        <div class="m_c"></div>
+                                        <div class="mark clear">
+                                            <p>评分:</p>
+                                            <em><label></label></em>
+                                            <span>2013-06-25 16:38:27</span>
+                                        </div>
+                                        <div class="arcord">有一款顶级葡萄酒，10年后会升值哒</div>
+                                    </div>
+                                </div>
+                                <div class="inf-text-one-clear"></div>
+                                <!-- 3 -->
+                                <div class="con_wap">
+                                    <div class="con_left">
+                                        <img src="../img/img-Xiang/1888723242565298.jpg">
+                                        <label>J***N<br>见习骑士</label>
+                                    </div>
+                                    <div class="con_right">
+                                        <div class="m_c"></div>
+                                        <div class="mark clear">
+                                            <p>评分:</p>
+                                            <em><label></label></em>
+                                            <span>2013-06-25 16:38:27</span>
+                                        </div>
+                                        <div class="arcord">有一款顶级葡萄酒，10年后会升值哒</div>
+                                    </div>
+                                </div>
+                                <div class="inf-text-one-clear"></div>
+		                        <!--分页开始-->
+		                        <div id="Paginationun" class="page">
+                                    <a class="result_next">></a>
+                                    <a class="tb">2</a>
+                                    <a class="stm">1</a>
+                                    <a class="result_prev"><</a>
+		                        </div>
+		                        <!--分页结束-->
+		                    </div>
+	                    </div>
+	                </div>
+	    			<!--商品评价结束-->
+	    			
+	    			<!--服务保障开始-->
+	    			<div id="detailTab3" class="detailCont">
+                       <div class="inf-text-one pd_d">
+                            <a name="more08" id="more08"></a>
+                            <div class="r_important"><em>服务保障</em></div>
+                        </div>
+                        <div class="ensure-cn">
+                            <ul class="cn-title" id="cn-titleId">
+                                <li class="e-01 active"><i></i>品牌授权</li>
+                                <li class="e-02"><i></i>保真“基金”</li>
+                                <li class="e-04"><i></i>万千信赖</li>
+                                <li class="e-03"><i></i>挂牌公司</li>
+                                <li class="e-05"><i></i>乐视生态成员</li>
+                                <li class="e-06"><i></i>金牌客服</li>
+                                <li class="e-07"><i></i>专业配送</li>
+                                <li class="e-08"><i></i>售后无忧</li>
+                            </ul>
+                            <ul class="cn-mn">
+                                <li class="menu_count" style="display:block"><img src="../img/img-Xiang/enc_01.jpg"></li>
+                                <li class="menu_count">
+                                    <b>赔付流程</b>
+                                    <img src="../img/img-Xiang/enc_02.jpg">
+                                    <p class="zhu"><em>注：</em>
+                                     1、赔付对象是鉴定为“假货”的商品，并非为订单内或是整体包装内的全部商品。<br>
+                                     </p>
+                                </li>
+                                <li class="menu_count">
+                                    <b>2017年</b>
+                                    <p>云酒头条实业与资本年度峰会——“资本市场明日之星大奖”</p>
+                                    <b>2016年</b>
+                                    <p>1.中国经营报企业家年会——“2016创新生态模式大奖”<br>
+                                    2.微酒中国酒业营销论坛——“中国酒业模式创新奖”<br>
+                                    3.第五届中国财经峰会——“2016最佳商业模式奖”<br>
+                                    4.酒海导航金葡100——2016中国优秀进口酒商代表人物<br>
+                                    5.2016第六届中国“星光董事局”传媒大奖——“年度最佳董事长”大奖<br>
+                                  </p>
+                                    <img src="../img/img-Xiang/enc_04.jpg">
+                                </li>
+                                <li class="menu_count">
+                                    <img src="../img/img-Xiang/enc_03.jpg">
+                                    <b style="margin-top:-50px;z-index:2;position:relative;">新三板挂牌时间</b>
+                                    <p>8月24日 股票代码“838890”</p>
+                                    <b>新三板介绍</b>
+                                    <b>公司的经营宗旨是</b>
+                                    <p>坚持公开、公平、公正的原则，完善市场功能，加强市场服务，维护市场秩序，推动市场创新，保护投资者及其他市场参与主体的合法权益，推动场外交易市场健康发展，促进民间投资和中小企业发展，有效服务实体经济。</p>
+                                </li>
+                                
+                                <li class="menu_count">
+                                    <p>8月24日 股票代码“838890”</p>
+                                    <b>新三板介绍</b>
+                                    <b>公司的经营宗旨是</b>
+                                    <p>坚持公开、公平、公正的原则，完善市场功能，加强市场服务，维护市场秩序，推动市场创新，保护投资者及其他市场参与主体的合法权益，推动场外交易市场健康发展，促进民间投资和中小企业发展，有效服务实体经济。</p>
+                                    <img src="../img/img-Xiang/enc_05.jpg">
+                                </li>
+                                <li class="menu_count">
+                                    <b>专业的客服团队</b>
+                                    <p>网酒网客户服务中心，我们始终秉承<span>“客户至上、始终如一”</span>的核心价值理念，向客户提供优质、高效、全方位服务。我们工作在后台，服务在最前线专注聆听客户心声，用声音传递热诚，用专业锻造优质，用服务擦亮品牌。具备WSET二级水平的资深客服随时为您答疑，与您享受到更便捷、更专业更优质的服务。</p>
+                                    <img src="../img/img-Xiang/enc_06.jpg">
+                                </li>
+                                <li class="menu_count">
+                                    <p>网酒网物流业务全国覆盖，现全国拥有2大物流中心，分别为北京，宁波，仓库的专业及高科技化管理方式，配送队伍高效及严谨工作方法，仓配之间的无缝衔接， 100%保证订单能高速准确的送达您的手中。</p>
+                                    <img src="../img/img-Xiang/enc_07.jpg">
+                                </li>
+                                <li class="menu_count">
+                                    <p>8月24日 股票代码“838890”</p>
+                                    <b>新三板介绍</b>
+                                    <b>公司的经营宗旨是</b>
+                                    <p>坚持公开、公平、公正的原则，完善市场功能，加强市场服务，维护市场秩序，推动市场创新，保护投资者及其他市场参与主体的合法权益，推动场外交易市场健康发展，促进民间投资和中小企业发展，有效服务实体经济。</p>
+                                    <img src="../img/img-Xiang/enc_08.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                         
+                       
+                    </div>
+	    			<!--服务保障结束-->
+	    			
+	    		</div>
+	    		<!--内容结束-->
+	    	</div>
+	    </div>
+	    <!--右侧结束-->
+	</div>
+	<!--正文结束-->
+
+
+    <!-- footer开始 -->
+    <div id="footer">
+      <div id="footer-slogen">
+          <dl>
+              <dt class="s1"></dt>
+              <dd><b>甄选全球葡萄酒</b></dd>
+          </dl>
+          <dl>
+              <dt class="s2"></dt>
+              <dd><b>社区智能化终端触达</b></dd>
+          </dl>
+          <dl>
+              <dt class="s3"></dt>
+              <dd><b>原产地高品质享受</b></dd>
+          </dl>
+          <dl>
+              <dt class="s4"></dt>
+              <dd><b>新葡萄酒品位生活</b></dd>
+          </dl>
+      </div>
+      <div id="footer-service">
+          <dl>
+              <dt>关于我们</dt>
+              <dd><a href="#">公司简介</a></dd>
+              <dd><a href="#">网酒基地</a></dd>
+              <dd><a href="#">媒体报道</a></dd>
+          </dl>
+          <dl>
+              <dt>新手指南</dt>
+              <dd><a href="#">新用户注册</a></dd>
+              <dd><a href="#">购物流程</a></dd>
+          </dl>
+          <dl>
+              <dt>会员相关</dt>
+              <dd><a href="#">会员等级</a></dd>
+              <dd><a href="#">积分政策</a></dd>
+              <dd><a href="#">会员权益</a></dd>
+          </dl>
+          <dl>
+              <dt>配送服务</dt>
+              <dd><a href="#">配送范围及时限</a></dd>
+              <dd><a href="#">配送运费(满99元免邮)</a></dd>
+              <dd><a href="#">运输包装说明</a></dd>
+              <dd><a href="#">发票制度</a></dd>
+          </dl>
+          <dl>
+              <dt>支付方式</dt>
+              <dd><a href="#">货到付款</a></dd>
+              <dd><a href="#">在线支付</a></dd>
+              <dd><a href="#">优惠券</a></dd>
+              <dd><a href="#">礼品卡/购物卡</a></dd>
+              <dd><a href="#">账户余额</a></dd>
+          </dl>
+          <dl>
+              <dt>售后服务</dt>
+              <dd><a href="#">退换货流程</a></dd>
+              <dd><a href="#">退款说明</a></dd>
+              <dd><a href="#">正品保障</a></dd>
+              <dd><a href="#">投诉建议</a></dd>
+          </dl>
+          <dl>
+              <dt>商家合作</dt>
+              <dd><a href="#">商家入驻</a></dd>
+              <dd><a href="#">平台规则</a></dd>
+              <dd><a href="#">招商方向</a></dd>
+          </dl>
+          <dl style="width:180px;">
+              <div class="slogen-app">
+                  <img src="../img/weibo.png">微博
+              </div>
+              <div class="slogen-app">
+                  <img src="../img/weixin.png">微信
+              </div>
+          </dl>
+          
+      </div>
+      <div id="footer-tips">
+          <div class="mn">
+              <div class="mn_left">
+                   <a href="#">友情链接</a> | 
+                   <a href="#">联系我们</a> | 
+                   <a href="#">隐私声明</a> | 
+                   <a href="#">媒体报道</a> | 
+                   <a href="#">消费者保护</a> | 
+                   <a href="#">真伪鉴别</a><br>
+                   食品流通许可证：SP1101081110120639         营业执照：9111010858442448XQ         公司地址：北京市海淀区学院南路68号20号楼1层126室 <br>
+                   北京网酒网电子商务股份有限公司 · 京ICP备16030607号-1         本网站中消费指南、售后服务、用户反馈及法定公示等内容并非广告 
+              </div>
+              <div class="mn_right">
+                  全国售后服务热线 : 4000-519-519<br>
+                  周一至周日：10：00-19：00
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- footer结束 -->
+
+
+
+
+</body>
+</html>
+<!--<script type="text/javascript" src="js/sea.js" ></script>-->
+<script type="text/javascript" src="../js/XiangQing.js"></script>
+    

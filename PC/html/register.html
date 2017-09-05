@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="Shortcut Icon" href="http://sso.letv.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+</head>
+<body>
+    <div class="le_top_box">
+        <img class="regi_logo" src="../img/img-ZhuDeng/CNlogo2x.png"/>
+    </div>
+    <div class="login_box_backbg">
+        <div class="regi_login_form_box">
+            <p class="part_top reg_top8">
+              <span class="top_title">注册</span>
+              <a href="logon.html" class="blu bluHover">立即登录</a>
+            </p>
+            <!-- 框 -->
+            <div class="posi_box">
+            	<form action="../php/regSave.php" method="post">
+                	<ul class="regi_ul regi_login_ul">
+	                    <li class="regi_form_input">
+	                        <input name="phone" id="phone" class="regi_login_input" placeholder="手机号" type="text"/><br/>
+	                        <span id="phoneMsg"></span>
+	                    </li>
+	                    <li class="regi_form_input">
+	                        <input name="username" id="userName" class="regi_login_input" placeholder="用户名" type="text"/><br/>
+	                        <span id="userMsg"></span>
+	                    </li>
+	                    <li class="regi_form_input">
+	                        <input name="password" id="passWord" class="regi_login_input" placeholder="密码" type="text"/>
+	                    </li>
+	                    <li class="regi_form_input">
+	                        <input name="password1" id="passWord1" class="regi_login_input" placeholder="重复密码" type="text"/>
+	                    </li>
+	                    <li class="regi_agree">
+	                        <label>
+	                        <input name="xieyi" id="xieyi" checked="checked" value="true" type="checkbox"> 同意《乐视服务使用协议》
+	                        </label>
+	                    </li>
+	                    <li>
+	                        <a href="#" class="regi_btn" id="submitBtn">注&nbsp;&nbsp;&nbsp;&nbsp;册</a>
+	                    </li>
+	                </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript">
+
+$(function(){
+	$("#userName").blur(function(){
+		$.get("../php/checkUser.php",{"userName":this.value},function(str){
+			if(str=="1"){
+				$("#userMsg").html("该用户已存在，请重新选择");
+			}else{
+				$("#userMsg").html("√");
+			}
+		});
+	});
+});
+	
+</script>
