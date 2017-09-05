@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+$fontsize:12px;
+$borderDirection:bottom;
+$width:1200px;
+body{
+    background: #EFEFEF;
+}
+//ul{
+//  list-style: none;
+//}
+// .banner_wrap{
+//     width: 100%;
+//     height: 400px;
+//     img{
+//         @extend .banner_wrap;
+//     }
+// }
+//手风琴开始
+.flash4{
+    width:1174px;
+    height:450px;
+    margin:0px auto;
+    margin-bottom:20px;
+    position:relative;
+    ul li{
+        width:106px;
+        height:450px;
+        position:relative;
+        overflow:hidden;
+        float:left;
+        .imgTop img{
+            opacity:0.4;
+        }
+        .imgTop img.tm{
+            opacity:1;
+        }
+        .imgCon{
+            width:538px;
+            height:405px;
+        }
+        .imgCen{
+            width:538px;
+            height:50px;
+            background:rgba(0,0,0,0.5);
+            color:#fff;
+            font-size:$fontsize+8;
+            line-height:50px;
+            position:absolute;
+            left:0px;
+            bottom:45px;
+            text-indent:$fontsize+8;
+            display:none;
+        }
+        .imgBot{
+            width:538px;
+            height:45px;
+            background:#222;
+            p.bt_1{
+                width:80px;
+                line-height:45px;
+                font-size:$fontsize+4;
+                color:#fff;
+                text-indent:20px;
+                float:left;
+            }
+            p.bt_2{
+                width:458px;
+                height:45px;
+                line-height:45px;
+                float:left;
+                display:none;
+                span{
+                    font-size:$fontsize+2;
+                    color:#fff;
+                    padding-right:30px;
+                    padding-left:10px;
+                }
+            }
+        }
+    }
+}
+.flash4 ul li.first{
+    width:538px;
+}
+.flash4 ul li.fast{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+}
+
+//手风琴结束
+/* 今日闪购开始 */
+.main_title{
+    background:#ffffff; 
+    width:$width; 
+    height:70px; 
+    margin:0 auto; 
+    border-#{$borderDirection}:1px solid #efefef;
+    margin-top: 25px;
+    h1{
+        border-#{$borderDirection}:2px solid #a40c59; 
+        float:left; 
+        margin:20px 0 0 25px; 
+        display:inline; 
+        color:#a40c59; 
+        font-size:$fontsize+6;
+    }
+    a{
+        display:block; 
+        color:#666666; 
+        font-size:$fontsize+2; 
+        text-align:center; 
+        width:114px; 
+        height:32px; 
+        border:1px solid #dcdcdc; 
+        line-height:32px; 
+        float:right; 
+        margin:17px 20px 0 0; 
+        text-decoration:none;
+    }
+}
+.leading{
+    width:$width;
+    margin:0 auto;
+    ul{
+        overflow:hidden;
+        li{
+            width:390px; 
+            float:left;
+            background:#fff;
+            overflow:hidden;
+            position:relative;
+            
+            .lead_img{
+                width:390px; 
+                height:270px;
+                img{
+                    width:390px; 
+                    height:270px;
+                }
+            }
+            .lead_txt{
+                padding:20px;
+                p{
+                    font-size:$fontsize+6; 
+                    color:#000; 
+                    height:26px; 
+                    overflow:hidden;
+                }
+                span{
+                    color:#666; 
+                    font-size:$fontsize; 
+                    display:block; 
+                    height:18px; 
+                    overflow:hidden;
+                }
+                label{
+                    font-weight:bold; 
+                    font-size:$fontsize+16; 
+                    display:block; 
+                    color:#c8101f; 
+                    padding-top:5px; 
+                    em{
+                        font-style:normal; 
+                        font-size:$fontsize+6; 
+                        float:left; 
+                        font-weight:bold; 
+                        padding-top:7px;
+                    }
+                }
+            }
+            .no{
+                margin:0px 15px;
+            }
+            .end_time{
+                background:#a40c59; 
+                width:214px; 
+                height:40px; 
+                line-height:40px; 
+                text-align:center; 
+                margin:0 auto; 
+                font-size:$fontsize+2; 
+                color:#fff; 
+                font-weight:bold;
+                position:absolute;
+                top:0px;
+                left:88px;
+                border-radius:0 0 8px 8px;
+            }
+        }
+        li:nth-child(1){
+            margin-right: 15px;
+        }
+        li:nth-child(2){
+            @extend li:nth-child(1);
+        }
+    }
+}
+/* 今日闪购结束 */
+
+/* 1855列级名庄开始 */
+.one{
+    height: 1023px;
+}
+//.some_list ul,.latest_news_right ul,.write_kg ul,.w_before ul{
+//  list-style:none;
+//}
+.some_list{
+    width:$width; 
+    margin:0 auto; 
+    ul li{
+        width:299px; 
+        border-right:1px solid #efefef; 
+        border-#{$borderDirection}:1px solid #efefef; 
+        height:340px; 
+        background:#fff; 
+        float:left; 
+        color:#333; 
+        font-size:$fontsize+2; 
+        position:relative;
+        .list_title{
+            padding:23px 20px 0 20px;
+            p{
+                overflow:hidden; 
+                width:259px; 
+                height:20px;
+            }
+        }
+        list_content{
+            padding:0 20px;
+        }
+    }
+    ul li:hover{
+        box-shadow:0px 3px 3px #b3b3b3; 
+        position:relative; 
+        z-index:1;
+    }
+}
+.forsale_shop .forsale_detail:hover{
+    box-shadow:0px 3px 3px #b3b3b3; 
+    position:relative; 
+    z-index:1;
+}
+.list_title span{
+    color:#cc0033; 
+    font-size:$fontsize+12; 
+    line-height:45px;
+    em{
+        font-size:$fontsize+8; 
+        float:left; 
+        line-height:30px;
+    }
+}
+.list_content .label_left{
+    width:100px; 
+    float:left; 
+    padding-top:100px;
+}
+.list_content .img_right{
+    float:left; 
+    width:150px; 
+    text-align:right;
+    img{
+        height:205px;
+    }
+}
+.label_left p{
+    font-size:$fontsize;
+    color:#333; 
+    width:100px; 
+    height:30px; 
+    line-height:30px; 
+    background:#f7f7f7; 
+    margin:0 0 10px 0;
+    em{
+        font-size:$fontsize+2;
+        color:#fff; 
+        width:40px; 
+        text-align:center; 
+        float:left; 
+        background:#e79c36; 
+        margin:0 8px 0 0;
+    }
+}
+/* 1855列级名庄结束 */
+/* 波尔多右岸名庄开始 */
+.two{
+    height:341px;
+}
+/* 波尔多右岸名庄结束 */
+/* 法国中级庄开始 */
+.three{
+    @extend .two;
+}
+/* 法国中级庄结束 */
+
+/* 底部上面开始 */
+.latest_news{
+    color:#666; 
+    font-size:$fontsize;
+    width:$width; 
+    margin:0 auto; 
+    overflow:hidden; 
+    padding:25px 0;
+    .latest_news_left{
+        background:#fff; 
+        width:705px;
+        margin-right:10px; 
+        float:left;
+    }
+    .news_title{
+        border-#{$borderDirection}:2px solid #a40c59; 
+        height:55px; 
+        line-height:55px; 
+        font-size:$fontsize+6; 
+        color:#a40c59; 
+        text-indent:15px;
+        a{
+            float:right; 
+            font-size:$fontsize+2;
+            padding-right:20px; 
+            color:#666;
+        }
+    }
+    .latest_news_right{
+        background:#fff; 
+        width:485px; 
+        float:left; 
+        height:405px; 
+        overflow:hidden;
+        height: 357px;
+    }
+}
+.news_con .news_ing{
+    float:left; 
+    width:322px; 
+    padding:0 10px 30px 0; 
+    height:115px;
+}
+.latest_news_left .news_con{
+    height:143px; 
+    padding-top:30px;
+    margin:0 20px; 
+    font-size:$fontsize;
+    color:#666; 
+    line-height:23px; 
+    padding:10px 0;
+    clear:both;
+}
+.latest_news_right ul li{
+    margin:0 20px; 
+    font-size:$fontsize;
+    color:#666; 
+    line-height:23px; 
+    padding:10px 0;
+    clear:both;
+    p{
+        font-size:$fontsize+2;
+        color:#393024;
+    }
+    .w{
+        width:150px; 
+        float:left;
+        height: 92px;
+        img{
+            width:140px; 
+            height:92px;
+        }
+    }
+}
+.news_ing  p{
+    font-size:$fontsize+2; 
+    color:#393024;
+}
+.news_ing .ing_img{
+    width:120px; 
+    float:left;
+    img{
+        width:110px; 
+        height:110px;
+    }
+}
+.news_con .solid{
+    margin:0 0 27px 0; 
+    border-#{$borderDirection}:1px dotted #c9c9c9;
+}
+/* 底部上面结束 */
+

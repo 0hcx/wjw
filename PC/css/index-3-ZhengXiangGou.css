@@ -1,0 +1,459 @@
+.l{
+	display:inline;
+	float:left;
+}
+#header-menu-z{
+	/* background:#fff; */
+	width:100%;
+	border-bottom:1px solid #a21459;
+}
+#header-menu{
+	position:relative;
+	width:90%;
+	margin:0 auto;
+	border-bottom:0px solid #aaa;
+	height:30px;
+	line-height:30px;
+	font-size:18px;
+	background:#fff;
+	z-index:30;
+}
+#header-menu li{
+	display:inline;
+	float:left;
+	height:30px;
+	/* border-bottom:0px solid #aaa; */
+	margin-bottom:-4px;
+	position:relative;
+}
+#header-menu li.menuid-z{
+	background:#222 url(../img/ico-2015-12.png) 130px -573px no-repeat;
+	width:166px; 
+	margin-right:25px;
+}
+#header-menu li.menuid-z:hover{
+	background:#222 url(../img/ico-2015-12.png) 130px -547px no-repeat;
+}
+#header-menu li>a.fir{
+	border-bottom:2px solid #a21459;
+}
+#header-menu li>a.gsexp{
+	/* border-bottom:2px solid #a21459; */
+	height:28px;
+}
+#header-menu li>a:hover{
+	border-bottom:2px solid #a21459;
+}
+#header-menu li>a{
+	color:#444;
+	display:block;
+	margin:0 30px 0 0;
+	font-size:14px;
+}
+#header-menu li:first-child>a{
+	color:#fff;
+	background:url(../img/ico-2015-12.png) 3px -604px no-repeat; 
+	line-height:28px; 
+	text-indent:35px;
+}
+.menu_left{
+	position:absolute; 
+	top:30px; 
+	left:0px; 
+	overflow:hidden; 
+	z-index:20;
+	background: #f8f8f8; 
+	height: 400px; 
+	width: 164px; 
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+	border-top:1px solid #e5e5e5;
+}
+.menu_left .listList .list{
+	width:160px; 
+	/* overflow:hidden; */
+	height:59px; 
+	margin-left:4px;
+}
+.menu_left .list{
+	width:160px; 
+	overflow:hidden;
+	height:59px; 
+	margin-left:4px;
+}
+.menu_left .list:hover h2,
+.menu_left .list:hover .list_con a,
+.menu_left .list:hover h2 a,
+.menu_left .list:visited h2,
+.menu_left .list:visited h2 a,
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu_left .list h2{
+	color:#414141; 
+	font-size:14px;
+	line-height:49px;
+	width: 125px; 
+	padding-left: 40px;
+	height:49px;
+	border-bottom: 1px solid #e4e4e4;
+	background-repeat:no-repeat;
+	background-position:0 center;
+}
+
+
+
+
+
+
+
+
+
+
+.menu_left .list .iterm01{
+	background-image: url(../img/sorticon_xuan.png);
+}
+/* .menu_left .list .iterm01:hover{
+	background-image: url(../img/sorticon_xuan_01.png);
+} */
+
+.menu_left .list .iterm02{
+	background-image: url(../img/sorticon_putao.png);
+}
+/* .menu_left .list .iterm02:hover{
+	background-image: url(../img/sorticon_putao_01.png);
+} */
+
+.menu_left .list .iterm03{
+	background-image: url(../img/sorticon_yang.png);
+}
+/* .menu_left .list .iterm03:hover{
+	background-image: url(../img/sorticon_yang_01.png);
+} */
+
+.menu_left .list .iterm04{
+	background-image: url(../img/sorticon_beer.png);
+}
+/* .menu_left .list .iterm04:hover{
+	background-image: url(../img/sorticon_beer_01.png); 
+} */
+
+.menu_left .list .iterm05{
+	background-image: url(../img/sorticon_round.png);
+}
+/* .menu_left .list .iterm05:hover{
+	background-image: url(../img/sorticon_round_01.png);
+} */
+
+.menu_left .list .iterm06{
+	background-image: url(../img/sorticon_enm.png);
+}
+/* .menu_left .list .iterm06:hover{
+	background-image: url(../img/sorticon_enm_01.png);
+} */
+.menu_left .list .iterm07{
+	background-image: url(../img/sorticon_rupin.png);
+}
+/* .menu_left .list .iterm07:hover{
+	background-image: url(../img/sorticon_rupin_01.png);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu_cn{
+	width: 690px; 
+	height: 390px; 
+	left: 166px;  
+	padding-top: 10px; 
+	display: block; 
+	background:#fff; 
+	position:absolute; 
+	z-index:2; 
+	top:30px;
+	border-top:1px solid #a21459;
+	border: 1px solid #000;
+}
+.menu_cn .cn_list b{
+	border-bottom: 1px solid #E4E4E4; 
+	padding-top:10px; 
+	font-weight: bold; 
+	display:block;
+	color: #a40c59;
+	font-size: 12px;
+	text-decoration: none;
+}
+.menu_cn .cn_list a:link {
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+}
+.menu_cn .cn_list a {
+    display: inline-block;
+    color: #666;
+    padding-right: 5px;
+}
+.menu_cn .cn_list {
+    line-height: 20px;
+    width: 280px;
+    border: 0px;
+    margin: 0px;
+    margin-left: 30px;
+}
+/* banner开始 */
+/*#md10057 a{
+	display:block;
+	float:left;
+	height:50px;
+	width:200px;
+	margin:12px 0 0 10px;
+}
+.mo-cen #md10058 a,.mo-cen #md10059 a,{
+	display:block;
+	height:400px;
+	width:1180px;
+	margin-left:10px;
+	cursor: pointer;
+}*/
+/* banner结束 */
+/*中间开始*/
+.mo-diy{
+	width:100%;
+	}
+.mo-diy .con{
+	margin:0 auto;
+	position:relative;
+	width:1200px;
+	}
+.mo-cen{
+	width: 100%;
+	background: #FEF9DB;
+	}
+#md10057 a{
+	display:block;
+	float:left;
+	height:50px;
+	width:200px;
+	margin:12px 0 0 45px;
+}
+#md10060 .con{
+	background: url(../img/img-Zheng/1497592665488152.jpg) center 0 repeat-y;
+	
+}
+#md10060 .con .con-01{
+	float:left;
+	display:inline;
+	margin-left:10px;
+}
+#md10060 .con .con-01 a{
+	display:block;
+	height:300px;
+	width:568px;
+}
+#md10060 .con .con-01 a:nth-child(2){
+	margin-top:12px;
+}
+#md10060 .con .con-02{
+	display:block;
+	float:right;
+	height:610px;
+	width:568px;
+	margin-right:10px;
+}
+
+/*红葡萄酒专区开始*/
+.template01{
+	width:1200px;
+	margin:0 auto;
+}
+.template01:after,.template01 li:after{
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden;
+}
+.template01 li{
+	margin-top:8px;
+	float:left;
+	width:1200px;
+	background:#fff;
+	position:relative;
+}
+/* .template01 li .tag{height:70px;width:70px;position:absolute;left:-3px;top:-3px;z-index:1;}
+.template01 li .tag img{height:70px;width:70px;}
+ */
+.template01 li .pic{
+	float:left;
+	text-align:center;
+	height:380px;
+	width:600px;
+	position:relative;
+}
+.template01 li .pic img{
+	height:380px;
+}
+/* .template01 li .pic .out{height:100px;width:100px;position:absolute;left:50%;top:50%;margin-left:-50px;margin-top:-50px;background:url(.../img/img-Zheng/ms_over02.png) 0 0 no-repeat;display:none;} */
+
+.template01 li .inf{
+	float:right;
+	width:520px;
+	margin-right:40px;
+	position:relative;
+}
+.template01 li .inf h3{
+	color:#000;
+	font-size:24px;
+	height:36px;
+	line-height:36px;
+	width:520px;
+	white-space:nowrap; 
+	margin-top:60px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+/* .template01 li .inf h3 a{color:#000;} */
+.template01 li .inf .text{
+	font-size:18px;
+	color:#666;
+	height:26px;
+	line-height:26px;
+	width:520px;
+	margin:20px 0 0;
+}
+.template01 li .inf .sale{
+	color:#be1c6a;
+	margin-top:60px;
+}
+.template01 li .inf .sale span{
+	font-size:28px;
+}
+.template01 li .inf .sale b{
+	font-size:40px;
+	margin-left:-8px;
+	overflow: hidden;
+}
+.template01 li .inf .btn{
+	height:50px;
+	line-height:50px;
+	width:250px;
+	color:#fff;
+	background:#be1c6a;
+	text-align:center;
+	font-size:18px;
+	margin-top:20px;
+	border-radius:4px;
+}
+/* .template01 li .inf .btn-of{background:#b9b9b9;display:none;cursor:default;}
+.template01 .temp-off .inf .sale{color:#b9b9b9;}
+.template01 .temp-off .inf .btn{display:none;}
+.template01 .temp-off .pic .out,.template01 .temp-off .inf .btn-of{display:block;}
+ */
+
+.template05 li{
+	width:232px;
+	margin-right:10px;
+	padding-bottom:12px;
+}
+.template05 li .pic{
+	height:230px;
+	width:232px;
+}
+.template05 li .pic img{
+	height:220px;
+	padding-top:10px;
+}
+.template05 li .inf{
+	width:212px;
+	margin-right:10px;
+}
+.template05 li .inf h3{
+	font-size:14px;
+	height:20px;
+	line-height:20px;
+	width:212px;
+	margin-top:8px;
+	/* margin-right:0px; */
+}
+.template05 li .inf .text{
+	font-size:12px;
+	height:18px;
+	line-height:18px;
+	width:212px;
+	margin-top:2px;
+}
+.template05 li .inf .sale{
+	margin-top:12px;
+}
+.template05 li .inf .sale span{
+	font-size:16px;
+}
+.template05 li .inf .sale b{
+	font-size:20px;
+}
+/* .template05 li .inf .btn{
+	height:30px;
+	line-height:30px;
+	width:90px;
+	font-size:14px;
+	margin-top:0px;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+} */
+.template05 li .inf .btn{
+	height:30px;
+	line-height:30px;
+	width:90px;
+	font-size:14px;
+	margin-top:0px;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
+
+
+/*红葡萄酒专区结束*/
+/*#md10060{
+	background: url(http://img2.wangjiu.com/file/20170616/default/1497592665488152) center 0 repeat-y;
+}*/
+#md10061{
+	background: url(../img/img-Zheng/1489565782565376.jpg) center 0 repeat-y;
+}
+#md10062{
+	background: url(../img/img-Zheng/1489565865003697.jpg) center 0 repeat-y;
+}
+#md10063{
+	background: url(../img/img-Zheng/1489565928799247.jpg) center 0 repeat-y;
+}
+#md10064{
+	background: url(../img/img-Zheng/1489565973636225.jpg) center 0 repeat-y;
+}
+#md10065{
+	background: url(../img/img-Zheng/1489566066167534.jpg) center 0 repeat-y;
+}
+
+/*中间结束*/

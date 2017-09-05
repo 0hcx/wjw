@@ -1,0 +1,362 @@
+body{
+	font-family:'Microsoft YaHei'; 
+	font-size:12px; 
+	color:#333;
+}
+*{
+	margin:0px;
+ 	padding:0px;
+ }
+/*header-tips*/
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-weight:normal;
+}
+ul,li{
+	list-style:none;
+}
+table,td,input,textarea{
+	font-size:12px;
+	outline:medium none;
+}
+/*header-tips 开始*/
+a{
+	color:#333;
+	text-decoration:none;
+	cursor:pointer;
+}
+a:hover{
+	color:#c4166e;
+	text-decoration:none;
+}
+#header-tips{
+	width:100%;
+	height:38px;
+	border-bottom:1px solid #ccc;
+	color:#999;
+	background: #fff;
+}
+#header-tips .mn{
+	height:14px;
+	line-height:14px;
+	font-size:12px;
+	padding-top:12px;
+	width:90%;
+	margin:0 auto;
+	z-index:5;
+	position:relative;
+}
+#header-tips .mn>li{
+	float:right;
+	display:inline;
+	border-right:1px dotted #ccc;
+	padding:0 10px;
+	position:relative;
+}
+#ti{
+	color:#c4166e;
+}
+#header-tips .mn>li:first-child{
+	border:0px;
+}
+#header-tips .mn>li a{
+	color:#999;
+}
+#header-tips .mn>li a:hover{
+	color:#c4166e;
+}
+#header-tips .mn>li.menu{
+	cursor:pointer;
+}
+#header-tips .mn>li.menu em{
+	display:block;
+	float:left;
+	position:relative;
+	z-index:3;
+}
+#header-tips .mn>li.menu i{
+	position:relative;
+	z-index:3;
+	height:6px;
+	width:10px;
+	float:left;
+	display:block;
+	margin:5px 0 0 5px;
+	background:url(../img/ico-2015-12.png) -10px -6px no-repeat;
+	transition: all 0.5s;
+}
+#header-tips .mn>li.menu:hover i{
+	background-position:-10px 0;
+}
+#header-tips .mn>li.app{
+	float:left;
+	display:inline;
+	line-height:22px;
+	padding:0;
+	border:0px;
+}
+#header-tips .mn>li.app span{
+	padding-right:20px; 
+}
+#header-tips .mn .menu>ul{
+	position:absolute;
+	top:-23px;
+	left:-1px;
+	border:1px solid #ccc;
+	padding:44px 10px 10px 16px;
+	background:#fff;
+	width:60px;
+	line-height:20px;
+	overflow:hidden;
+	opacity:0;
+	display:none;
+	transition: all .5s;
+}
+#header-tips .mn .menu:hover>ul{
+	height:auto;
+	opacity:1;
+	display:block;
+}
+/*header-tips 结束*/
+
+/*header-mn-z 开始*/
+#header-mn-z{
+	width:100%;
+	height: 120px;
+	background: #fff;
+}
+#header-mn{
+	width:1200px;
+	margin:0 auto;
+	padding:20px 0;
+}
+#header-mn .logo{
+	height:90px;
+	width:160px;
+	background:url(../img/leico.png) no-repeat;
+	float:left;
+	display:inline;
+}
+#header-mn #hd-car{
+	position:relative;
+	float:right;
+	display:inline;
+	cursor:pointer;
+	background:#fff;
+	margin-top:20px;
+}
+#header-mn #hd-car .car-hd{
+	border:1px solid #a40c59;
+	border-radius:2px;
+	height:28px;
+	line-height:28px;
+	overflow:hidden;
+	color:#fff;
+}
+#header-mn #hd-car .car-hd .car-tw{
+	float:left;
+	display:inline;
+	background:#a40c59 url(../img/ico-2015-12.png) 10px -47px no-repeat;
+	width:70px;
+	padding-left:40px;
+}
+#header-mn #hd-car .car-hd .car-numb{
+	float:left;
+	display:inline;
+	margin-left:12px;
+	color:#a40e59;
+}
+#header-mn #hd-car .car-hd i{
+	height:6px;
+	width:10px;
+	float:left;
+	display:block;
+	margin:12px 10px 0 5px;
+	background:url(../img/ico-2015-12.png) -20px -6px no-repeat;
+}
+#header-mn #hd-search{
+	position:relative;
+	float:left;
+	display:inline;
+	margin:20px 0 0 150px;
+}
+#header-mn #hd-search .mn{
+	width:530px;
+	position:relative;
+}
+#header-mn #hd-search .mn .search-text{
+	float:left;
+	border:1px solid #a40c59;
+	display:inline;
+	height:28px;
+	line-height:28px;
+	padding:0 80px 0 10px;
+	width:439px;
+	color:#666;
+}
+#header-mn #hd-search .mn .search-text:focus{
+	outline:none;
+	transition:border linear .2s,box-shadow linear .5s;
+	border-color:#a40c59;
+	box-shadow:0 0 8px #ccc;
+}
+#header-mn #hd-search .mn .search-btn{
+	display:block;
+	float:left;
+	height:30px;
+	width:60px;
+	background:url(../img/btn-search.png) 0 0 no-repeat;
+	margin-left:-61px;
+}
+#header-mn #hd-search .mn .search-btn-02{
+	display:block;
+	float:left;
+	height:30px;
+	width:70px;
+	margin-left:-71px;
+	background:#000;
+	color:#fff;
+	line-height:30px;
+	text-align:center;
+	font-size:16px;
+}
+#header-mn #hd-search .mn .search-tips{
+	overflow:hidden;
+	width:530px;
+	padding-top:5px;
+}
+#header-mn #hd-search .mn .search-tips a{
+	display:block;
+	float:left;
+	margin-right:5px;
+	color:#999;
+}
+#header-mn #hd-search .mn a:hover{
+	color:#a40c59;
+}
+
+/*header-mn-z 结束*/
+
+/* 底部 开始 */
+#footer{
+	border-top:1px solid #ccc;
+	width:100%;
+	background:#fff;
+	overflow:hidden;
+	margin: 0 auto;
+}
+#footer-service{
+	width:1200px;
+	margin:0 auto;
+	overflow:hidden;
+	border-top:1px dashed #ccc;
+	padding:30px 0;
+}
+#footer-service dl{
+	float:left;
+	display:inline;
+	width:145px;
+	font-size:12px;
+	line-height:24px;
+}
+#footer-service dl:last-child{
+	width:80px;
+}
+#footer-service dl dt{
+	font-size:18px;
+	padding-bottom:10px;
+}
+#footer-slogen{
+	padding:30px 0;
+	overflow:hidden;
+	text-indent: 20px;
+	margin:0 auto; 
+	padding-left:150px;
+}
+#footer-slogen dl{
+	float:left;
+	/* display:inline; */
+	width:280px;
+	overflow:hidden;
+	margin-top:22px;
+}
+#footer-slogen dt{
+	float:left;
+	/* display:inline; */
+	height:50px;
+	width:50px;
+	background:url(../img/ico-2015-12s.png) 0 0 no-repeat;
+	margin-right:10px;
+}
+#footer-slogen dt.s2{
+	background-position:0 -55px;
+}
+#footer-slogen dt.s3{
+	background-position:0 -110px;
+}
+#footer-slogen dt.s4{
+	background-position:0 -165px;
+}
+#footer-slogen dd{
+	float:left;
+	display:inline;
+	font-size:14px;
+	margin-top:6px;
+}
+#footer-slogen dd b{
+	font-size:16px;
+	padding-top:10px;
+	display:block;
+	color:#666;
+}
+#footer-service .slogen-app{
+	float:left;
+	display:inline;
+	margin-left:10px;
+	width:80px;
+	text-align:center;
+}
+#footer-service .slogen-app img{
+	height:80px;
+	width:80px;
+	padding-bottom:10px;
+}
+
+
+
+#footer-tips{
+	background:#000;
+	width:100%;
+	/* color:#fff; */
+}
+#footer-tips .mn{
+	line-height:20px;
+	font-size:12px;
+	margin:0 auto;
+	padding:20px 0; 
+	color:#fff;
+	width:1200px; 
+	overflow:hidden;
+}
+#footer-tips .mn a{
+	color:#fff;
+}
+#footer-tips .mn a:hover{
+	color:#fff; 
+	text-decoration:underline;
+}
+#footer-tips .mn .mn_left{
+	width:970px; 
+	float:left;
+}
+#footer-tips .mn .mn_right{
+	width:230px; 
+	float:left; 
+	text-align:right;
+	background:url(../img/ico-2015-12.png) 0 -646px no-repeat; 
+	line-height:25px;
+}
+/* 底部 结束 */

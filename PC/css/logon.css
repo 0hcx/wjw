@@ -1,0 +1,168 @@
+*{
+ margin:0;
+ padding:0
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+	list-style:none;
+}
+.regi_logo {
+    margin: 30px 0 0 45px;
+    background-image: none;
+    height: 47px;
+    width: auto;
+}
+.login_box_backbg {
+	height:483px;
+	background-image:url("../img/img-ZhuDeng/operatbg.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.regi_login_form_box {
+    width: 430px;
+    height: 460px;
+    background: #fff;
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    margin-top: 12px;
+}
+.regi_login_form_wrap .part_top {
+    width: 380px;
+}
+.reg_top8 {
+    margin-top: 11px;
+    padding: 8px 0;
+    line-height: 24px;
+    overflow: hidden;
+    height: 40px;
+
+}
+.part_top .top_title {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.part_top .mess_text {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-right: 28px;
+}
+/* 框 */
+.posi_box{
+	clear: both;
+	width: 380px;
+	height: 305px;
+}
+.regi_ul{
+	width: 380px;
+	height: 305px;
+}
+.regi_ul .regi_form_input{
+	width: 380px;
+}
+.regi_form_input input{
+	width: 380px;
+	height: 42px; 
+}
+.regi_login_input{
+    width: 270px;
+    font-size: 14px;
+}
+#username{
+	position: absolute;
+    top: 0;
+	margin: 70px 20px 10px;
+}
+#password{
+	position: absolute;
+    top: 0;
+	margin: 132px 20px 10px;
+}
+
+.regi_agree label{
+	position: absolute;
+    top: 0;
+	margin: 200px 20px 10px;
+	font-size: 12px;
+}
+#xieyi{
+    display: block;
+    float: left;
+    font-size: 12px;
+}
+.regi_agree label a{
+    display: block;
+    float: right;
+}
+#submitBtn{
+    position: absolute;
+    top: 0;
+	margin: 230px 20px 10px;
+	font-size: 18px;
+	height: 38px;
+    line-height: 38px;
+    border: 2px solid #009de6;
+    background: #009de6;
+    color: #fff;
+    text-align: center;
+    width: 380px;
+}
+
+/* footer */
+.co_foot {
+    position: absolute;
+    width: 381px;
+    margin-left: 23px;
+    bottom: 15px;
+}
+.regi_wz_box {
+    text-align: center;
+    margin: -25px 26px;
+}
+.regi_wz_box, .regi_wz_box a {
+    font-size: 16px;
+    color: gray;
+}
+.regi_more .regi_more_line {
+    margin: 40px 26px;
+    height: 16px;
+    border-top: 1px solid #DBDBDB;
+    position: relative;
+    z-index: 1;
+}
+.regi_more .regi_more_title {
+    display: block;
+    margin-top: -11px;
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+    z-index: 10;
+    width: 90px;
+    text-align: center;
+    background: #fff;
+    color: gray;
+}
+.regi_more_title{
+    font-size: 12px;
+}
+.regi_more .regi_more_list{
+    height: 40px;
+}
+.regi_more .regi_more_list li a {
+    /* margin: 0px 40px 20px; */
+    margin-top: -32px;
+    float: left;
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: url("../img/img-ZhuDeng/regi_more.png") no-repeat;
+}
+.regi_more .regi_more_list li:nth-child(1){
+    margin-left: 75px;
+}

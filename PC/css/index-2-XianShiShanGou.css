@@ -1,0 +1,377 @@
+body{
+	background: #EFEFEF;
+}
+/*今日闪购导航栏开始*/
+.fast_menu{
+	width:1200px; 
+	margin:0 auto; 
+}
+.fast_menu ul li{
+	float:left; 
+	height:35px; 
+	line-height:35px; 
+	padding-right:40px; 
+	font-size:16px;
+}
+.fast_menu ul li a{
+	display:block; 
+	line-height:35px; 
+	height:33px;
+}
+.fast_menu ul li a:hover,.fast_menu ul li a.on{
+	border-bottom:2px solid #d51323;
+}
+.fast_menu ul li a.main{
+	background:#d51323; 
+	width:210px; 
+	text-indent:25px; 
+	color:#fff; 
+	height:35px; 
+	font-size:18px;
+}
+.fast_menu ul li a.main:hover{
+	border-bottom:0;
+}
+/*今日闪购导航栏结束*/
+/*倒计时开始*/
+.o_clock{
+	width:340px; 
+	margin:0 auto; 
+	padding:50px 0 30px 0;
+}
+.o_clock .sign{
+	background:#efefef; 
+	height:20px; 
+	width:340px; 
+	position:relative;
+}
+.o_clock .sign_txt{
+	position:absolute; 
+	z-index:1; 
+	left:0; 
+	top:-24px; 
+	color:#666; 
+	font-size:18px; 
+	width:340px; 
+	text-align:center; 
+	line-height:30px;
+}
+.o_clock .sign_txt p{
+	color:#d51323; 
+	font-weight:bold; 
+	font-size:30px;
+}
+.o_clock .limit{
+	width:273px; 
+	margin:35px 0 0 38px; 
+	height:80px; 
+	background:url(../img/img-Shan/clock.png) no-repeat;
+}
+.o_clock .limit p{
+	width:80px; 
+	line-height:75px; 
+	color:#fff; 
+	text-align:center; 
+	font-size:50px; 
+	float:left; 
+	padding-right:11px;
+}
+/*倒计时结束*/
+/*今日闪购内容开始*/
+.leading{
+	width:1200px;
+	margin:0 auto;
+}
+.leading ul{
+	overflow:hidden;
+}
+.leading ul li{
+	width:390px; 
+	float:left; 
+	margin:10px 5px 0; 
+	background:#fff;
+}
+.leading ul li.none{
+	margin-right:0;
+}
+.leading ul li .lead_img,
+.leading ul li .lead_img img{
+	width:390px; 
+	height:270px;
+}
+.leading ul li .lead_img img{
+	
+}
+.leading ul li .lead_txt{
+	padding:20px;
+}
+.leading ul li .lead_txt p{
+	font-size:12px; 
+	color:#000; 
+	height:18px; 
+	overflow:hidden;
+}
+.leading ul li .lead_txt span{
+	color:#000; 
+	font-size:18px; 
+	display:block; 
+	height:26px; 
+	overflow:hidden;
+}
+.leading ul li .lead_txt label{
+	font-weight:bold; 
+	font-size:28px; 
+	display:block; 
+	color:#c8101f; 
+	padding-top:5px;
+}
+.leading ul li .lead_txt label em{
+	font-style:normal; 
+	font-size:18px; 
+	float:left; 
+	font-weight:bold; 
+	padding-top:7px;
+}
+.leading ul li.no{
+	margin-right:0px;
+}
+/*今日闪购内容结束*/
+/*推荐美酒开始*/
+.fast_choose{
+	/* width:1200px;  */
+	padding:30px 0 25px 600px;
+}
+/*.fast_choose ul{text-align: center;}
+.fast_choose ul li{display:inline; margin-left:-3px;}*/
+.fast_choose a{
+	display:inline-block; 
+	width:150px; 
+	height:50px; 
+	line-height:50px; 
+	text-align:center; 
+	color:#e60012; 
+	font-size:18px; 
+	background:#fff;
+}
+.fast_choose a.on{
+	background:#ca0915; 
+	color:#fff; 
+	position:relative;
+}
+
+/*.fast_choose a.on span{display:block; position:absolute; z-index:1; top:0; right:-15px; height:50px; width:15px; background:url(../img/img-Shan/fico.png) 0 0 no-repeat;}*/
+.fast_choose a.on em{
+	display:block; 
+	position:absolute; 
+	z-index:1; 
+	left:50%; 
+	margin-left:-7px; 
+	bottom:-11px; 
+	width:14px; 
+	height:11px; 
+	background:url(../img/img-Shan/fico.png) 0 -58px no-repeat;
+}
+#fast_chooseId{
+	width: 1200px;
+	height: 1400px;
+	margin-left: 70px;
+}
+.stream_wrap{
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+.stream_wrap .stream_top{
+	width:595px; 
+	height:260px; 
+	padding-top:30px; 
+	background:#fff; 
+	position:relative; 
+	overflow:hidden;
+}
+.stream_top .stream_left{
+	width:355px; 
+	float:left; 
+	overflow:hidden;
+}
+.stream_top .stream_left .row01{
+	color:#333; 
+	font-size:20px; 
+	line-height:35px; 
+	height:35px; 
+	width:335px; 
+	/* overflow:hidden;  */
+	margin-bottom:65px; 
+	padding-left:20px;
+	cursor:default;
+}
+.stream_top .stream_left .row01 em{
+	background:url(../img/img-Shan/fico.png) 0 -75px no-repeat; 
+	width:35px; 
+	height:35px; 
+	display:block; 
+	float:left; 
+	margin-right:10px;
+}
+.stream_top .stream_left .row02{
+	font-size:14px; 
+	color:#a5a5a5; 
+	width:335px; 
+	/* overflow:hidden;  */
+	height:50px; 
+	margin-bottom:40px; 
+	padding-left:20px;
+}
+.stream_top .stream_left .row02 p{
+	font-size:14px; 
+	color:#333; 
+	height:30px;
+	line-height:30px; 
+	overflow:hidden; 
+	width:335px;
+}
+/* .stream_top .stream_left .row02 em{
+	display:block; 
+	height:20px; 
+	overflow:hidden;
+} */
+.stream_top .stream_left .row03{
+	color:#e60012; 
+	font-size:30px; 
+	height:56px; 
+	line-height:56px; 
+	padding-left:20px; 
+	float:left;
+	width:335px;
+}
+.stream_top:hover .stream_left .row03 .on{
+	position:absolute;
+	left:-0;
+	top:220px;
+	transition: all 0.2s;
+	z-index:2;
+	background:#ca0915; 
+	color:#fff; 
+	padding-left:20px;
+	height:56px;
+}
+.stream_top .stream_left .row03 .on{
+	left:-310px;
+}
+/* .stream_top .stream_left .row03 span,
+.goods_top .goods_label em span{
+	font-size:20px;
+} */
+.stream_top .stream_left .row03 .on p{
+	float:left;
+}
+.stream_top .stream_left .row03 em{
+	display:none; 
+	width:30px; 
+	height:56px; 
+	float:left;
+}
+.stream_top .stream_left .row03 .on a,
+.stream_top.none .stream_left .row03 a{
+	color:#fff; 
+	font-size:18px; 
+	margin:0 20px 0 30px; 
+	display:block; 
+	float:left;
+}
+.stream_top:hover .stream_left .row03 .on em{
+	background:url(../img/img-Shan/fico.png) 0 -166px no-repeat; 
+	float:left; 
+	display:block; 
+	position:absolute; 
+	z-index:3; 
+	top:0; 
+	right:-30px;
+}
+/* .stream_top.none .stream_left .row03 .on,
+.fast_shopping ul li.none .item_car a{
+	background:#999;
+} */
+.stream_top.none .stream_left .row03 .on em{
+	background:url(../img/img-Shan/fico.png) 0 -229px no-repeat; 
+	position:absolute; 
+	right:-30px;
+}
+.stream_top .stream_left .row03 .on label{
+	display:none; 
+	color:#fff; 
+	font-size:18px; 
+	float:left;
+	margin:0 20px 0 30px;
+}
+/* .stream_top .stream_left .row03 .on a,
+.stream_top.none .stream_left .row03 .on label,
+.fast_shopping ul li .item_car a{
+	display:block;
+} */
+.stream_top .stream_right{
+	width:240px; 
+	float:left;
+}
+.stream_top .stream_right img{
+	width:240px; 
+	height:240px;
+}
+.stream_wrap .stream_bottom{
+	border-top:1px solid #f7ecec; 
+	height:40px;
+	width:570px; 
+	margin:0 auto; 
+	background:#fff; 
+	position:relative; 
+	color:#999; 
+	line-height:40px;
+}
+/*.stream_bottom .side_l,.goods_bottom .side_l{position:absolute; z-index:1; top:0; left:-12px; width:15px; height:15px; background:url(../img/img-Shan/fico.png) 0 -147px no-repeat;}
+.stream_bottom .side_r,.goods_bottom .side_r{position:absolute; z-index:1; top:0; right:-15px; width:15px; height:15px; background:url(../img/img-Shan/fico.png) -21px -147px no-repeat;}
+.stream_bottom p{background:url(../img/img-Shan/fico.png) 0 -119px no-repeat; width:20px; height:20px; margin:10px 15px 0 120px; float:left;}
+.stream_bottom span{color:#e60012; font-size:14px; padding-right:25px;}
+.stream_bottom a,.goods_bottom a{position:absolute; z-index:1; top:10px; right:0; display:block; padding-left:30px; width:45px; height:20px; line-height:20px; color:#e60012; font-size:14px; background:url(../img/img-Shan/fico.png) 0 0 no-repeat;}
+.stream_bottom a.collect_01,.goods_bottom a.collect_01{background-position:0 -305px;}
+.stream_bottom a.collect_02,.goods_bottom a.collect_02{background-position:0 -328px;}
+.stream_top .comp{position:absolute; z-index:1; top:120px; right:160px;}
+.stream_top .momp{position:absolute; z-index:1; top:40px; right:180px;}
+.stream_top .momp img{height:50px;width:50px;}
+.stream_top.none:hover .stream_left .row03 .on{transition:none;-moz-transition:none;z-index:2;color:#e60012; font-size:30px; height:56px;}
+.stream_top.none:hover .stream_left .row03 .on{background:#fff;}*/
+
+/*推荐美酒结束*/
+/* 精彩频道开始 */
+.fast_title{
+	width:1200px; 
+	position:relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.fast_title .item01{
+	background:#e5e5e5; 
+	height:1px; 
+	width:1200px; 
+	clear:both; 
+	margin:50px 0;
+}
+.fast_title .item02{
+	width:200px; 
+	text-align:center; 
+	font-size:30px; 
+	position:absolute; 
+	z-index:1; 
+	top:27px; 
+	left:50%; 
+	margin-left:-100px;
+}
+/* 精彩频道结束 */
+
+
+
+
+
+
+
+
+

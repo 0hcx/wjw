@@ -1,0 +1,254 @@
+/*购物车头部开始*/
+.lecar_head{
+	background:#ffffff; 
+	height:90px; 
+	margin-bottom:30px;
+	margin-left: 183px;;
+}
+.lecar_head .head_ico{
+	float:left; 
+	width:180px;
+}
+.lecar_head .head_buid{
+	float:left; 
+	width:200px; 
+	font-size:20px; 
+	line-height:90px;
+}
+.lecar_head .head_effect{
+	float:left; 
+	width:510px; 
+	padding:25px 0 0 80px;
+}
+.head_effect .effect_bg,.effect_bg p{
+	background:url(../img/img-Cart/lico.png) 0 0 no-repeat #ffffff; 
+	height:35px; 
+	width:510px;
+}
+.effect_bg p.running{
+	background-position:0 -40px;
+}
+.effect_bg .effect_result{
+	background:url(../img/img-Cart/lico.png) 0 0 no-repeat; 
+	height:10px; 
+	margin-top:4px;
+}
+.effect_bg .r_01.w_s .effect_result{
+	width:173px; 
+	background-position:0 -62px;
+}
+/*.effect_bg .r_02.w_s .effect_result{
+	width:160px; 
+	background-position:-173px -62px;
+}
+.effect_bg .r_03.w_s .effect_result{
+	width:179px; 
+	background-position:-327px -62px;
+}*/
+.effect_bg em{
+	float:right;
+}
+.effect_bg .r_01 em{
+	padding-right:15px;
+}
+/*购物车头部结束*/
+
+
+
+
+
+/*主体内容开始*/
+.lepay_wrap{
+	width:980px; 
+	background:#ffffff; 
+	padding:85px 0; 
+	margin-top:15px; 
+	overflow:hidden;
+}
+ .lepay_wrap .lepay_content{
+	width:570px; 
+	margin:0 auto;
+}
+/*.lepay_content .pay_sign{width:60px; float:left;}
+.pay_sign em{display:block; width:45px; height:45px; background:url(../img/img-Cart/lico.png) 0 -153px no-repeat;}
+.lepay_content .pay_info{width:510px; float:left;}
+.pay_info p.line01,.lepay_wrap .none_shop p,.online_card_behind .online_txt p,.online_card_submit p{font-size:20px;}
+.pay_info p.line02 a.mine{color:#0060ae; margin-right:5px;}
+.pay_info p.line02 span,.send_parts_left label em,.another_sales p.sales_info em,.withGO_01 p.w01 span{color:#a40e59;}
+.pay_info p.line02 .serve{border:1px solid #a40e59; float:right; width:78px; height:17px; line-height:17px; display:block; margin-right:30px;}
+.serve em{background:url(../img/img-Cart/lico.png) -20px -107px no-repeat; display:block; float:left; width:20px; height:20px; margin-right:2px;}
+.pay_info p.line03,.another_sales .another_sales_ss{color:#999999;}
+.pay_info .pay_BTN{padding:20px 0; overflow:hidden;}
+ */
+.lepay_wrap .none_shop{
+	background:url(../img/img-Cart/lico.png) 0 -220px no-repeat; 
+	padding:30px 0 0 105px; 
+	height:90px; 
+	overflow:hidden;
+}
+.lepay_wrap .none_shop p{
+	font-size:20px;
+}
+.lepay_wrap .none_shop a{
+	color: #0060ae;
+}
+/*主体内容结束*/
+
+
+
+/* 大家都在买开始 */
+.ducts-slide{
+	width:1200px;
+	margin:20px auto;
+	box-shadow: 0px 1px 3px #eee;
+}
+.ducts-slide .tlt{
+	background:#efefef;
+	height:38px;
+	line-height:38px;
+	/* overflow:hidden; */
+	font-size:14px;
+}
+.ducts-slide .tlt li{
+	float:left;
+	padding:0 20px;
+}
+.ducts-slide .tlt li:hover{
+	color:#fff;
+	background:#999;
+}
+.ducts-slide .tlt li.active{
+	background:#a40e59;
+	color:#fff;
+}
+.ducts-slide .bd{
+	overflow:hidden;
+	width:1200px;
+	background:#fff; 
+	position:relative;
+	height:360px;
+}
+.ducts-slide .mn{
+	width:1070px;
+	overflow:hidden;
+	height:360px;
+	left:63px;
+	position:absolute;
+	/* z-index:1; */
+}
+.ducts-slide .mn ul{
+	overflow:hidden;
+	/* width:1070px; */
+	width: 1100px;
+	overflow: hidden;
+}
+.ducts-slide .mn .left02{
+	float: left;
+}
+.ducts-slide .mn ul li{
+	float:left;
+	padding:30px 12px;
+	width:190px;
+	display: block;
+}
+/* .ducts-slide .mn ul li .img img{
+	width:150px;
+	height:150px;
+	padding:25px 0px;
+} */
+.ducts-slide .mn ul li img{
+	width:190px;
+	height:200px;
+	text-align:center;
+	margin:0 auto;
+	display:block;
+	position:relative;
+}
+/* .ducts-slide .mn ul li .img .tag01{position:absolute;bottom:0px;right:0px;}
+.ducts-slide .mn ul li .img .tag01 img{width:60px;height:60px;}
+ */
+.ducts-slide .mn ul li h3{
+	text-align:center;
+	font-size:14px; 
+	line-height:16px; 
+	overflow:hidden; 
+	height:16px;
+	margin:8px 0 14px;
+}
+.ducts-slide .mn ul li h3 a{
+	color:#333;
+}
+.ducts-slide .mn ul li .price{
+	width:190px;
+	text-align:center;
+	font-size:16px;
+	color:#a40e59;
+}
+.ducts-slide .mn ul li .btn{
+	background:#a40e59; 
+	height:26px; 
+	line-height:24px; 
+	display:block; 
+	color:#fff; 
+	font-size:14px;
+	text-align:center;
+	margin:0 auto;
+	width:96px;
+}
+.ducts-slide .mn ul li .btn:hover{
+	background:#c4166e; 
+	color:#fff;
+}
+.ducts-slide .btn-l{
+	display:block;
+	float:left;
+	width:40px;
+	height:76px;
+	background:url(../img/img-Lie/icon_arrow.png) 0 20px no-repeat;
+	margin:140px 3px 0 20px;
+}
+.ducts-slide .btn-r{
+	display:block;
+	float:right;
+	width:40px;
+	height:76px;
+	background:url(../img/img-Lie/icon_arrow.png) -62px 20px no-repeat;
+	margin:140px 24px 0 3px;
+}
+
+
+/* 大家都在买结束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ducts-slide{width:1200px;margin:20px auto 0;box-shadow: 0px 1px 3px #eee;}
+.ducts-slide .tlt{background:#efefef;height:38px;line-height:38px;overflow:hidden;font-size:14px;}
+.ducts-slide .tlt a{float:left;display:inline;padding:0 20px;display:block;}
+.ducts-slide .tlt a:hover{color:#fff;background:#999;}
+.ducts-slide .tlt a.active{background:#a40e59;color:#fff;}
+.ducts-slide .bd{overflow:hidden;width:1200px;background:#fff; position:relative;height:360px;}
+.ducts-slide .mn{width:1070px;overflow:hidden;display:inline;height:360px;left:63px;position:absolute;z-index:1;}
+.ducts-slide .mn ul{overflow:hidden;width:1070px;}
+.ducts-slide .mn ul li{float:left;display:inline;padding:30px 12px;width:190px;}
+.ducts-slide .mn ul li .img img{width:150px;height:150px;padding:25px 0px;}
+.ducts-slide .mn ul li .img{width:190px;height:200px;text-align:center;margin:0 auto;display:block;position:relative;}
+.ducts-slide .mn ul li .img .tag01{position:absolute;bottom:0px;right:0px;}
+.ducts-slide .mn ul li .img .tag01 img{width:60px;height:60px;}
+.ducts-slide .mn ul li h3{font-size:14px; line-height:16px; overflow:hidden; height:16px;margin:8px 0 14px;}
+.ducts-slide .mn ul li h3 a{color:#333333;}
+.ducts-slide .mn ul li .price{width:190px;text-align:center;font-size:16px;color:#a40e59;}
+.ducts-slide .mn ul li .btn{background:#a40e59; height:26px; line-height:24px; display:block; color:#ffffff; font-size:14px;text-align:center;margin:0 auto;width:96px;}
+.ducts-slide .mn ul li .btn:hover{background:#c4166e; color:#ffffff;}
+.ducts-slide .btn-l{display:block;float:left;width:40px;height:76px;background:url(../img/img-Cart/icon_arrow.png) 0 20px no-repeat;margin:140px 3px 0 20px;}
+.ducts-slide .btn-r{display:block;float:right;width:40px;height:76px;background:url(../img/img-Cart/icon_arrow.png) -62px 20px no-repeat;margin:140px 24px 0 3px;}
